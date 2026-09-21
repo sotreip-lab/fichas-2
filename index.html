@@ -244,6 +244,83 @@ ol.steps li{margin:6px 0}
 .toast.on{opacity:1;transform:translateX(-50%)}
 @media(min-width:820px){.toast{bottom:32px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* ---- clientes ---- */
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chp{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;color:var(--navy);background:#eef0f8;border-radius:99px;padding:3px 10px;line-height:1.35}
+.chp.y{background:#fff3cf;color:#7a5a05}
+.chp.g{background:#eaf7f0;color:var(--ok)}
+.chp.r{background:#fdeceb;color:var(--red)}
+.chp.gr{background:#ececec;color:#666}
+.chp.am{background:#fff6e0;color:var(--amber)}
+.cgrid{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:760px){.cgrid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.cgrid{grid-template-columns:repeat(3,1fr)}}
+.cc{background:#fff;border:1px solid var(--line);border-top:4px solid var(--yellow);border-radius:var(--r);box-shadow:var(--sh1);padding:15px 16px 14px;display:flex;flex-direction:column;gap:9px;animation:rise .35s var(--ease) both;transition:box-shadow .2s,transform .2s}
+.cc:hover{box-shadow:var(--sh2);transform:translateY(-2px)}
+.cc.pausa{border-top-color:#b9bfd3}
+.cc.cerrado{border-top-color:#9aa1b5;opacity:.7}
+.cc .hd{display:flex;align-items:center;gap:8px;justify-content:space-between}
+.cc .nm{font-family:"Playfair Display",Georgia,serif;font-weight:700;font-size:20px;color:var(--navy);line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.cc .tel{font-weight:600;color:var(--ink2);font-size:14px;text-decoration:none}
+.cc .tel.no{color:var(--amber)}
+.cc .bud{font-weight:800;font-size:19px;color:var(--navy);line-height:1.1}
+.cc .bud small{font-weight:600;color:var(--muted);font-size:12px}
+.cc .hs{font-size:12.5px;color:var(--muted)}
+.cc .ac{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:4px}
+.cc .ac .btn{flex:1 1 auto;padding:9px 10px;font-size:13px}
+.segrow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:99px;font-size:13px;font-weight:700;color:var(--muted);background:#fff;border:1.5px solid var(--line)}
+.pill.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.pill .n{font-size:11px;background:rgba(0,0,0,.08);border-radius:99px;padding:0 6px}
+.pill.on .n{background:rgba(255,255,255,.2)}
+.tgs{display:flex;flex-wrap:wrap;gap:8px}
+label.tg{display:inline-block;position:relative;margin:0;text-transform:none;letter-spacing:0;font-size:14px;color:var(--ink)}
+.tg input{position:absolute;opacity:0;width:1px;height:1px}
+.tg span{display:inline-block;padding:9px 15px;border:1.5px solid var(--line);border-radius:99px;font-weight:600;cursor:pointer;background:#fff;transition:background .15s,color .15s,border-color .15s}
+.tg input:checked+span{background:var(--navy);color:#fff;border-color:var(--navy)}
+.tg input:focus-visible+span{outline:3px solid var(--yellow);outline-offset:2px}
+.cact{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.hlist{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.hi{display:flex;gap:12px;align-items:center;padding:10px;border:1.5px solid var(--line);border-radius:14px;background:#fff;flex-wrap:wrap;position:relative;transition:background .2s,border-color .2s,box-shadow .2s;animation:rise .3s var(--ease) both}
+.hi .th{position:relative;flex:none;width:92px;height:70px;border-radius:10px;overflow:hidden;background:var(--navy3);display:grid;place-items:center;color:#8f99c2}
+.hi .th img{width:100%;height:100%;object-fit:cover;display:block;transition:filter .2s,opacity .2s}
+.hi .bd{flex:1;min-width:0}
+.hi .t{display:-webkit-box;font-weight:700;font-size:14.5px;color:var(--navy);line-height:1.25;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.hi .m{font-size:12.5px;color:var(--muted);margin-top:2px}
+.hi .wr{display:flex;gap:6px;flex-wrap:wrap;margin-top:5px}
+.hi .ab{display:flex;gap:6px;flex:none}
+.hi.s-i{border-color:var(--yellow);background:#fffbef;box-shadow:0 0 0 3px rgba(246,194,68,.2)}
+.hi.s-d{background:#f0f0f0;border-color:#dadada}
+.hi.s-d .th img{filter:grayscale(1);opacity:.5}
+.hi.s-d .t,.hi.s-d .m{color:#858585}
+.ibx{height:36px;padding:0 12px;border-radius:10px;display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;background:#f1f2f8;color:var(--navy);transition:background .15s,color .15s;white-space:nowrap}
+.ibx:hover{background:var(--navy);color:#fff}
+.ibx.yes{background:#fff3cf;color:#7a5a05}.ibx.yes:hover{background:var(--yellow);color:var(--navy3)}
+.ibx.no:hover{background:#6b6b6b;color:#fff}
+.hi .rs{flex:0 0 100%;display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding-top:8px;border-top:1px dashed #cfcfcf;font-size:13px;color:var(--muted)}
+@media(max-width:560px){.hi .ab{flex:0 0 100%;justify-content:flex-end;border-top:1px solid var(--line);padding-top:8px}.hi.s-d .ab{border-color:#dcdcdc}}
+.mt{border:1.5px solid var(--yellow);background:#fffbef;border-radius:14px;padding:12px 14px;margin-top:14px;display:grid;gap:9px;animation:rise .3s var(--ease) both}
+.mt.done{border-color:#bfe3cf;background:#f1fbf5}
+.mt .tt{font-weight:700;color:var(--navy);display:flex;gap:8px;align-items:flex-start;line-height:1.35}
+.mt .tt .i{font-size:19px;color:var(--yellow3);margin-top:1px}
+.mt.done .tt .i{color:var(--ok)}
+.mt ul{list-style:none;display:grid;gap:8px}
+.mt li{font-size:13.5px;display:grid;gap:5px;padding:8px 10px;background:#fff;border:1px solid #f0e2b0;border-radius:10px}
+.mt li b{color:var(--navy)}
+.mt .bt{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.wchip.dup{color:#6b6b6b;background:#efefef;border-color:#d4d4d4}
+.wchip.fit{color:var(--ok);background:#eaf7f0;border-color:#bfe3cf}
+.wchip.bad{color:var(--red);background:#fdeceb;border-color:#f0b9b4}
+.imp{display:grid;gap:12px;margin-top:14px}
+.imp .ic{border:1.5px solid var(--line);border-radius:14px;padding:12px;display:grid;gap:8px}
+.imp .ic.off{opacity:.55}
+.imp .ic .ln{font-size:13px;color:var(--muted)}
+.cliline{margin-top:8px;font-size:13.5px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.printfr{width:100%;height:56vh;border:0;background:#fff;border-radius:10px;box-shadow:var(--sh1)}
+.pastebox{background:#fff9e8;border:1.5px dashed #f6c244;border-radius:12px;padding:12px;margin-bottom:14px}
+.pastebox textarea{min-height:64px;background:#fff}
+.pastebox .hint{margin-top:6px}
+.pastebox .hint.ok{color:var(--ok);font-weight:600}
 </style>
 </head>
 <body>
@@ -270,6 +347,12 @@ ol.steps li{margin:6px 0}
 <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M17.5 19a4.5 4.5 0 1 0-1.4-8.8A6 6 0 0 0 4.5 12 3.5 3.5 0 0 0 6 19Z"/></symbol>
 <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></symbol>
 <symbol id="i-desktop" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1Z"/></symbol>
+<symbol id="i-print" viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></symbol>
+<symbol id="i-userplus" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></symbol>
+<symbol id="i-clip" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></symbol>
+<symbol id="i-undo" viewBox="0 0 24 24"><path d="M3 7v6h6"/><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"/></symbol>
 </defs></svg>
 
 <header class="top"><div class="in">
@@ -277,6 +360,7 @@ ol.steps li{margin:6px 0}
   <div class="tt">Fichas para clientes<small>Guillermo Badenheuer · Inmobiliaria</small></div>
   <nav class="tabs" id="tabs">
     <button class="tab on" data-v="new"><svg class="i"><use href="#i-new"/></svg>Nueva ficha</button>
+    <button class="tab" data-v="cli"><svg class="i"><use href="#i-users"/></svg>Clientes <span class="bdg" id="tabCountC" hidden></span></button>
     <button class="tab" data-v="list"><svg class="i"><use href="#i-list"/></svg>Mis fichas <span class="bdg" id="tabCount" hidden></span></button>
     <button class="tab" data-v="set"><svg class="i"><use href="#i-cog"/></svg>Ajustes</button>
   </nav>
@@ -296,9 +380,10 @@ ol.steps li{margin:6px 0}
       <div class="card">
         <h2>Cliente</h2>
         <label for="fLabel">Etiqueta (solo la ves vos)</label>
-        <input id="fLabel" list="labels" maxlength="80" placeholder="Ej: María Pérez · depto 2 amb centro" autocomplete="off">
+        <input id="fLabel" list="labels" maxlength="80" placeholder="Elegí un cliente de tu lista o escribí un nombre" autocomplete="off">
         <datalist id="labels"></datalist>
-        <p class="hint" style="margin-top:6px">Sirve para saber a quién le mandaste cada link. No aparece en la ficha que ve el cliente y la podés cambiar cuando quieras.</p>
+        <div class="cliline" id="cliLine" hidden></div>
+        <p class="hint" style="margin-top:6px" id="cliHint">Sirve para saber a quién le mandaste cada link. No aparece en la ficha que ve el cliente y la podés cambiar cuando quieras.</p>
       </div>
 
       <div class="card" id="cProps">
@@ -309,6 +394,7 @@ ol.steps li{margin:6px 0}
           <p class="hint" id="autoStatus">Funciona con Zonaprop, Bahía Blanca Propiedades e IBB. Podés pegar varios links juntos. Se completa solo: precio, m², fotos, descripción (teléfonos tachados) e inmobiliaria.</p>
         </div>
         <ul class="items" id="items"></ul>
+        <div id="matchBox"></div>
         <div class="empty" id="itemsEmpty"><svg class="i"><use href="#i-home"/></svg>Todavía no agregaste propiedades.<br>Pegá un link arriba y aparece acá.</div>
 
         <details id="altWays">
@@ -356,9 +442,28 @@ ol.steps li{margin:6px 0}
   </div>
 </section>
 
+<!-- ============ CLIENTES ============ -->
+<section class="view" id="v-cli" hidden>
+  <div class="pagehead">
+    <div><h1>Clientes que buscan comprar</h1><p>Cargá lo que busca cada cliente. Cuando pegues una propiedad, te aviso si le sirve a alguno de ellos y la sumás a su ficha con un toque.</p></div>
+    <div class="row" style="flex-wrap:wrap">
+      <button class="btn" id="btnNewCli" type="button"><svg class="i"><use href="#i-userplus"/></svg>Nuevo cliente</button>
+      <button class="btn ghost" id="btnImport" type="button"><svg class="i"><use href="#i-clip"/></svg>Pegar de WhatsApp</button>
+      <button class="btn ghost" id="btnPrintAll" type="button"><svg class="i"><use href="#i-print"/></svg>Imprimir</button>
+    </div>
+  </div>
+  <div class="gh no" id="cliBackup" hidden></div>
+  <div class="tools">
+    <div class="search"><svg class="i"><use href="#i-search"/></svg><input id="qCli" type="search" placeholder="Buscar por nombre, teléfono o zona…" autocomplete="off"></div>
+  </div>
+  <div class="segrow" id="cliFilter"></div>
+  <div class="cgrid" id="cList"></div>
+  <div class="nores" id="cliMsg" hidden></div>
+</section>
+
 <!-- ============ MIS FICHAS ============ -->
 <section class="view" id="v-list" hidden>
-  <div class="pagehead"><div><h1>Mis fichas</h1><p>Todas las fichas que creaste en este navegador. Podés cambiar la etiqueta, reenviar el link o editar la ficha después de enviarla: el link es el mismo y se actualiza solo.</p></div></div>
+  <div class="pagehead"><div><h1>Mis fichas</h1><p>Todas las fichas que creaste en este navegador. Si la ficha es de un cliente de tu lista, ves cuántas le interesaron. Podés cambiar la etiqueta, reenviar el link o editar la ficha después de enviarla: el link es el mismo y se actualiza solo.</p></div></div>
   <div class="tools">
     <div class="search"><svg class="i"><use href="#i-search"/></svg><input id="qList" type="search" placeholder="Buscar por cliente o propiedad…" autocomplete="off"></div>
   </div>
@@ -408,7 +513,7 @@ ol.steps li{margin:6px 0}
 
     <div class="card">
       <h2>Copia de seguridad</h2>
-      <p class="hint" style="margin-bottom:10px">La lista de fichas y las etiquetas viven en este navegador. Descargá una copia por si cambiás de celular o borrás los datos del navegador.</p>
+      <p class="hint" style="margin-bottom:10px">La lista de fichas, las etiquetas y tus clientes (con lo que buscan y su historial de propiedades) viven en este navegador. Descargá una copia por si cambiás de celular o borrás los datos del navegador.</p>
       <div class="row" style="flex-wrap:wrap"><button class="btn ghost small" id="btnExport" type="button">Descargar copia</button><label class="btn ghost small" style="margin:0;text-transform:none;letter-spacing:0;cursor:pointer">Restaurar copia<input type="file" id="fileImport" accept="application/json" hidden></label></div>
     </div>
 
@@ -436,6 +541,7 @@ ol.steps li{margin:6px 0}
 
 <nav class="tabbar" id="tabbar">
   <button class="on" data-v="new"><svg class="i"><use href="#i-new"/></svg>Nueva</button>
+  <button data-v="cli"><svg class="i"><use href="#i-users"/></svg>Clientes<span class="bdg" id="tabCountC2" hidden></span></button>
   <button data-v="list"><svg class="i"><use href="#i-list"/></svg>Mis fichas<span class="bdg" id="tabCount2" hidden></span></button>
   <button data-v="set"><svg class="i"><use href="#i-cog"/></svg>Ajustes</button>
 </nav>
@@ -503,6 +609,73 @@ ol.steps li{margin:6px 0}
     </details>
   </div>
   <div class="sf"><button class="btn ghost" id="btnViewRes" type="button"><svg class="i"><use href="#i-ext"/></svg>Ver como cliente</button><button class="btn wa" id="btnWaRes" type="button"><svg class="i"><use href="#i-chat"/></svg>Enviar por WhatsApp</button><button class="btn navy" id="btnNewRes" type="button">Cargar otra ficha</button></div>
+</div></div>
+
+<div class="modal" id="mCli" hidden role="dialog" aria-modal="true" aria-labelledby="mCliT"><div class="sheet wide">
+  <div class="sh"><h2 id="mCliT">Cliente</h2><div style="display:flex;gap:10px;align-items:center"><div class="seg" id="cliSeg"><button class="on" data-t="busca">Lo que busca</button><button data-t="hist">Historial <span id="histN"></span></button></div><button class="xb" data-close aria-label="Cerrar"><svg class="i"><use href="#i-x"/></svg></button></div></div>
+  <div class="sb">
+    <div id="cliBusca">
+      <div class="pastebox" id="cliPasteBox"><label for="c_paste">Pegá acá el mensaje de WhatsApp y se completa solo</label><textarea id="c_paste" placeholder="*NOMBRE: EZEQUIEL*&#10;*Inmueble:* Casa&#10;*Ubicación:* Barrio Nacional&#10;…"></textarea><p class="hint" id="cliPasteHint">Si pegás varios clientes juntos, los cargo todos a la vez.</p></div>
+      <div class="cact" id="cliActs">
+        <button class="btn ghost small" id="cActFicha" type="button"><svg class="i"><use href="#i-new"/></svg>Nueva ficha para este cliente</button>
+        <button class="btn ghost small" id="cActWa" type="button"><svg class="i"><use href="#i-chat"/></svg>Escribirle</button>
+        <button class="btn ghost small" id="cActPrint" type="button"><svg class="i"><use href="#i-print"/></svg>Imprimir su ficha</button>
+        <button class="btn ghost small" id="cActCopy" type="button"><svg class="i"><use href="#i-copy"/></svg>Copiar como mensaje</button>
+      </div>
+      <div class="grid" style="margin-bottom:14px">
+        <div class="span2"><label for="c_name">Nombre *</label><input id="c_name" maxlength="80" placeholder="Ej: Ezequiel" autocomplete="off"></div>
+        <div class="span2"><label for="c_phone">Teléfono (WhatsApp)</label><input id="c_phone" type="tel" inputmode="tel" maxlength="40" placeholder="291 555-1234" autocomplete="off"></div>
+      </div>
+      <div style="margin-bottom:14px"><label>Inmueble que busca</label>
+        <div class="tgs" id="c_tipos"></div></div>
+      <div class="grid" style="margin-bottom:14px">
+        <div class="span2"><label for="c_zonas">Ubicación (barrios o zonas, separados por coma)</label><input id="c_zonas" maxlength="200" placeholder="Ej: Centro, Barrio Nacional, San Agustín" autocomplete="off"></div>
+        <div class="span2"><label for="c_loc">Localidad</label><input id="c_loc" maxlength="60" placeholder="Bahía Blanca" autocomplete="off"></div>
+        <div><label for="c_dorm">Dormitorios (mínimo)</label><select id="c_dorm"><option value="">Cualquiera</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5 o más</option></select></div>
+        <div><label for="c_ext">Espacio exterior</label><select id="c_ext"><option value="">No lo pidió</option><option value="patio">Con patio</option><option value="balcon">Balcón o terraza</option><option value="cualquiera">Cualquiera de los dos</option></select></div>
+        <div><label for="c_coch">Estacionamiento</label><select id="c_coch"><option value="">No lo pidió</option><option value="si">Con cochera</option></select></div>
+        <div><label for="c_pago">Pago</label><select id="c_pago"><option value="">Sin definir</option><option value="contado">Contado</option><option value="credito">Apto crédito</option><option value="indistinto">Contado o crédito</option></select></div>
+        <div><label for="c_max">Presupuesto máx. (USD)</label><input id="c_max" inputmode="numeric" placeholder="120.000" autocomplete="off"></div>
+        <div><label for="c_fin">Inversión o vivienda</label><select id="c_fin"><option value="">Sin definir</option><option value="vivienda">Para vivienda</option><option value="inversion">Inversión</option></select></div>
+        <div><label for="c_finNota">Aclaración (opcional)</label><input id="c_finNota" maxlength="60" placeholder="Ej: 2027" autocomplete="off"></div>
+        <div><label for="c_estado">Estado</label><select id="c_estado"><option value="activo">Buscando</option><option value="pausa">En pausa</option><option value="cerrado">Ya compró / no busca más</option></select></div>
+        <div class="span2"><label for="c_exp">Expensas</label><input id="c_exp" maxlength="80" placeholder="Ej: Lo más bajas posibles" autocomplete="off"></div>
+      </div>
+      <div style="margin-bottom:6px"><label for="c_obs">Observaciones</label><textarea id="c_obs" maxlength="800" style="min-height:80px" placeholder="Ej: No más de dos pisos por escalera. Lo más nuevo posible."></textarea></div>
+      <button class="link" id="cActDel" type="button" style="color:var(--red)" hidden>Eliminar este cliente</button>
+    </div>
+    <div id="cliHist" hidden>
+      <div class="segrow" id="histFilter"></div>
+      <p class="hint" id="histHint"></p>
+      <ul class="hlist" id="histList"></ul>
+    </div>
+  </div>
+  <div class="sf" id="cliFoot"><button class="btn ghost" data-close type="button">Cerrar</button><button class="btn" id="btnCliSave" type="button"><svg class="i"><use href="#i-check"/></svg>Guardar cliente</button></div>
+</div></div>
+
+<div class="modal" id="mImp" hidden role="dialog" aria-modal="true"><div class="sheet wide">
+  <div class="sh"><h2>Pegar clientes desde WhatsApp</h2><button class="xb" data-close aria-label="Cerrar"><svg class="i"><use href="#i-x"/></svg></button></div>
+  <div class="sb">
+    <p class="hint" style="margin-bottom:8px">Pegá uno o varios mensajes con el formato que usan hoy (<b>NOMBRE</b>, <b>Inmueble</b>, <b>Ubicación</b>, <b>Dormitorios</b>…). Los leo, los ordeno y los revisás antes de guardar.</p>
+    <textarea id="impText" style="min-height:150px" placeholder="*NOMBRE: EZEQUIEL*&#10;*Inmueble:* Casa&#10;*Ubicación:* Barrio Nacional o San Agustin&#10;*Dormitorios* : 2&#10;…"></textarea>
+    <div class="row" style="margin-top:10px"><button class="btn navy" id="btnImpRead" type="button">Leer mensajes</button></div>
+    <div class="imp" id="impList"></div>
+  </div>
+  <div class="sf"><button class="btn ghost" data-close type="button">Cancelar</button><button class="btn" id="btnImpSave" type="button" disabled>Guardar clientes</button></div>
+</div></div>
+
+<div class="modal" id="mPrint" hidden role="dialog" aria-modal="true"><div class="sheet wide">
+  <div class="sh"><h2>Imprimir solicitantes</h2><button class="xb" data-close aria-label="Cerrar"><svg class="i"><use href="#i-x"/></svg></button></div>
+  <div class="sb">
+    <div class="grid" style="margin-bottom:12px">
+      <div class="span2"><label for="pr_fmt">Formato</label><select id="pr_fmt"><option value="plan">Planilla: una fila por cliente (hoja horizontal)</option><option value="fichas">Fichas: una por cliente, con sus propiedades enviadas</option></select></div>
+      <div><label for="pr_who">Quiénes</label><select id="pr_who"><option value="act">Solo los que están buscando</option><option value="actp">Buscando y en pausa</option><option value="all">Todos</option></select></div>
+      <div><label for="pr_ord">Orden</label><select id="pr_ord"><option value="name">Nombre (A a Z)</option><option value="max">Presupuesto (mayor a menor)</option><option value="new">Más recientes primero</option></select></div>
+    </div>
+    <p class="hint" id="prInfo" style="margin-bottom:8px"></p>
+    <iframe class="printfr" id="printFrame" title="Vista previa de la impresión"></iframe>
+  </div>
+  <div class="sf"><button class="btn ghost" data-close type="button">Cerrar</button><button class="btn" id="btnDoPrint" type="button"><svg class="i"><use href="#i-print"/></svg>Imprimir o guardar como PDF</button></div>
 </div></div>
 
 <div class="modal" id="mConfirm" hidden role="dialog" aria-modal="true"><div class="sheet" style="max-width:460px">
@@ -1212,9 +1385,12 @@ ${At}
 <script src="${s}viewer.js"><\/script>
 </body></html>
 `}function Dt(t){let n=/<script id="ficha-data" type="application\/json">([\s\S]*?)<\/script>/.exec(t);if(!n)return null;try{let e=JSON.parse(n[1]);return e&&Array.isArray(e.ps)?e:null}catch{return null}}var g=class extends Error{constructor(e,r){super(r);_(this,"status");this.status=e}},Oe=t=>{let n=new TextEncoder().encode(t),e="";for(let r=0;r<n.length;r+=32768)e+=String.fromCharCode(...n.subarray(r,r+32768));return btoa(e)},Ne=t=>{let n=atob(t.replace(/\s/g,"")),e=new Uint8Array(n.length);for(let r=0;r<n.length;r++)e[r]=n.charCodeAt(r);return new TextDecoder().decode(e)},O=class{constructor(n,e,r,s="https://api.github.com"){this.owner=n;this.repo=e;this.token=r;this.apiBase=s;_(this,"branch","")}async call(n,e,r){let s;try{s=await fetch(this.apiBase+e,{method:n,headers:{Authorization:"Bearer "+this.token,Accept:"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28",...r?{"Content-Type":"application/json"}:{}},body:r?JSON.stringify(r):void 0})}catch{throw new g(0,"No pude conectarme con GitHub. Revisá tu conexión a internet.")}if(s.status===204)return null;let i=null;try{i=await s.json()}catch{}if(!s.ok){let a=i&&i.message||"";throw s.status===401?new g(401,"GitHub no aceptó el token (es incorrecto o venció). Creá uno nuevo y pegalo en Ajustes."):s.status===403?new g(403,/rate limit/i.test(a)?"GitHub pidió esperar unos minutos (demasiadas consultas). Probá de nuevo en un rato.":'El token no tiene permiso de escritura en este repositorio. Revisá que tenga "Contents: Read and write".'):s.status===404?new g(404,"No encuentro ese repositorio, o el token no tiene acceso a él. Revisá el usuario y el nombre del repositorio."):s.status===409||s.status===422?new g(s.status,a||"Conflicto al guardar en GitHub"):new g(s.status,a||"Error de GitHub ("+s.status+")")}return i}async info(){let n=await this.call("GET",`/repos/${this.owner}/${this.repo}`);return this.branch=n.default_branch||"main",{branch:this.branch,canPush:n.permissions?!!(n.permissions.push||n.permissions.admin):null}}async ref(){return this.branch||await this.info(),this.branch}enc(n){return n.split("/").map(encodeURIComponent).join("/")}async get(n){let e=await this.ref();try{let r=await this.call("GET",`/repos/${this.owner}/${this.repo}/contents/${this.enc(n)}?ref=${encodeURIComponent(e)}`);if(!r||Array.isArray(r))return null;let s=(r.content||"").replace(/\s/g,"");if(!s&&r.download_url){let a=await fetch(r.download_url),o=new Uint8Array(await a.arrayBuffer()),c="";for(let p=0;p<o.length;p+=32768)c+=String.fromCharCode(...o.subarray(p,p+32768));s=btoa(c)}let i="";try{i=Ne(s)}catch{}return{sha:r.sha,text:i,b64:s}}catch(r){if(r instanceof g&&r.status===404)return null;throw r}}async put(n,e,r,s=!1,i){let a=await this.ref(),o=s?e:Oe(e);for(let c=0;c<2;c++){let p=i;(!p||c>0)&&(p=(await this.get(n))?.sha);try{return{sha:(await this.call("PUT",`/repos/${this.owner}/${this.repo}/contents/${this.enc(n)}`,{message:r,content:o,branch:a,...p?{sha:p}:{}})).content.sha}}catch(l){if(c===0&&l instanceof g&&(l.status===409||l.status===422))continue;throw l}}throw new g(409,"No se pudo guardar por un conflicto en GitHub. Probá de nuevo.")}async remove(n,e){let r=await this.ref(),s=await this.get(n);s&&await this.call("DELETE",`/repos/${this.owner}/${this.repo}/contents/${this.enc(n)}`,{message:e,sha:s.sha,branch:r})}};function Ut(t,n){let e=t.toLowerCase();return n.toLowerCase()===`${e}.github.io`?`https://${e}.github.io/`:`https://${e}.github.io/${n}/`}async function Rt(t,n,e={}){let r=e.timeoutMs??24e4,s=e.everyMs??3500,i=Date.now(),a=0;for(;Date.now()-i<r;){try{let o=await fetch(t+(t.includes("?")?"&":"?")+"_="+Date.now(),{cache:"no-store"});if(o.ok&&(await o.text()).includes(n))return"live"}catch{if(++a>=12)return"unknown"}e.onTick?.(Math.round((Date.now()-i)/1e3)),await new Promise(o=>setTimeout(o,s))}return"timeout"}return Ft(_e);})();})();</script>
+<script>window.CoreCli=(()=>{var R=Object.defineProperty;var Q=Object.getOwnPropertyDescriptor;var G=Object.getOwnPropertyNames;var J=Object.prototype.hasOwnProperty;var V=(t,e)=>{for(var o in e)R(t,o,{get:e[o],enumerable:!0})},X=(t,e,o,n)=>{if(e&&typeof e=="object"||typeof e=="function")for(let s of G(e))!J.call(t,s)&&s!==o&&R(t,s,{get:()=>e[s],enumerable:!(n=Q(e,s))||n.enumerable});return t};var ee=t=>X(R({},"__esModule",{value:!0}),t);var de={};V(de,{DEFAULT_CITY:()=>A,TIPOS:()=>D,addToHist:()=>W,cleanCliente:()=>P,emptyCliente:()=>U,formatRequest:()=>K,histCounts:()=>Y,histFromProp:()=>I,matchProperty:()=>Z,norm:()=>p,parseMoney:()=>N,parseRequests:()=>B,propKey:()=>L,propTipo:()=>q,tipoKey:()=>T,tipoLabel:()=>E,urlNorm:()=>_,waNumber:()=>O});function F(t){return String(t??"").replace(/\u27E6[^\u27E7]*\u27E7/g,"").replace(/\(\s*(?:tel\.?|cel\.?|llam\w*|whats\w*|contact\w*|consult\w*)?[\s:.\-]*\)/gi,"").replace(/\b(?:tel\.?|cel\.?|llamar|whatsapp|contacto|consultas)\s*[:\-]?\s*$/i,"").replace(/\s{2,}/g," ").trim()}var D=[{k:"casa",label:"Casa"},{k:"depto",label:"Departamento"},{k:"ph",label:"PH"},{k:"terreno",label:"Terreno"},{k:"local",label:"Local"},{k:"oficina",label:"Oficina"},{k:"cochera",label:"Cochera"},{k:"campo",label:"Campo / Quinta"},{k:"otro",label:"Otro"}],te=new Set(D.map(t=>t.k)),E=t=>D.find(e=>e.k===t)?.label||t,A="Bahía Blanca",p=t=>String(t??"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase(),oe=t=>t.replace(/(^|[\s\-.])(\p{L})(\p{L}*)/gu,(e,o,n,s)=>o+n.toUpperCase()+s.toLowerCase()),ne=t=>t.replace(/[\p{L}]{3,}/gu,e=>e===e.toUpperCase()?e[0]+e.slice(1).toLowerCase():e),k=(t,e)=>typeof t=="string"?t.replace(/\u0000/g,"").replace(/[ \t]+/g," ").trim().slice(0,e):"";function ie(t){let e=t.replace(/[.,]+$/,"");if(!e)return null;e.includes(".")&&e.includes(",")?e=e.replace(/\./g,"").replace(",","."):e.includes(",")?e=/,\d{1,2}$/.test(e)&&(e.match(/,/g)||[]).length===1?e.replace(",","."):e.replace(/,/g,""):e.includes(".")&&(e=/^\d{1,3}(\.\d{3})+$/.test(e)?e.replace(/\./g,""):e);let o=parseFloat(e);return Number.isFinite(o)?o:null}function N(t){let e=p(t),o=/(\d[\d.,]*)\s*(millones|millon|mil|k)?/.exec(e);if(!o)return null;let n=ie(o[1]);if(n==null)return null;o[2]==="mil"||o[2]==="k"?n*=1e3:o[2]&&(n*=1e6);let s=/\b(ars|pesos)\b/.test(e)||/\$/.test(t)&&!/(usd|u\$s|us\$|dolar)/.test(e)?"ARS":"USD";return{n:Math.round(n),cur:s}}function T(t){let e=p(t);return e.trim()?/\b(depto|dpto|departamento|monoambiente|duplex|piso|loft)\b|depto/.test(e)?"depto":/\bph\b|propiedad horizontal/.test(e)?"ph":/\b(casa|chalet|casona|vivienda)\b/.test(e)?"casa":/\b(terreno|lote|baldio)\b/.test(e)?"terreno":/\b(local|comercial|fondo de comercio)\b/.test(e)?"local":/\boficina\b/.test(e)?"oficina":/\b(cochera|garage|garaje)\b/.test(e)?"cochera":/\b(campo|quinta|chacra|galpon)\b/.test(e)?"campo":"":""}function O(t){let e=String(t||"").replace(/\D/g,"");if(!e)return"";if(e=e.replace(/^00/,""),e.startsWith("54")&&(e=e.slice(2),e=e.replace(/^9/,"")),e=e.replace(/^0+/,""),e.length>10&&e.length-2===10){for(let o of[2,3,4])if(e.slice(o,o+2)==="15"){e=e.slice(0,o)+e.slice(o+2);break}}return(e.length===7||e.length===6)&&(e="291"+e),e.length===8&&/^15/.test(e)&&(e="291"+e.slice(2)),e.length!==10?"":"549"+e}var se=["activo","pausa","cerrado"],M=(t,e)=>{let o=typeof t=="number"?t:parseFloat(String(t??"").replace(",","."));return Number.isFinite(o)&&o>=0&&o<=e?Math.round(o):null};function P(t,e){let o=t&&typeof t=="object"?t:{},n=e||{},s=(d,c,l)=>c.includes(d)?d:l,r=(Array.isArray(o.tipos)?o.tipos:n.tipos||[]).filter(d=>typeof d=="string"&&te.has(d)).slice(0,9);return{name:k(o.name,80),phone:k(o.phone,40),tipos:[...new Set(r)],localidad:k(o.localidad,60)||A,zonas:k(o.zonas,200),dorm:M(o.dorm,20),ext:s(o.ext,["","patio","balcon","cualquiera"],""),coch:o.coch==="si"?"si":"",pago:s(o.pago,["","contado","credito","indistinto"],""),max:M(o.max,1e9),fin:s(o.fin,["","vivienda","inversion"],""),finNota:k(o.finNota,60),exp:k(o.exp,80),obs:k(o.obs,800),estado:s(o.estado,se,"activo")}}var U=()=>P({});function re(t){let e=p(t).replace(/\(.*$/,"").trim();return/^nombre|^cliente|^solicitante/.test(e)?"name":/^inmueble|^tipo|^propiedad/.test(e)?"tipo":/^ubicacion|^zona|^barrio/.test(e)?"ubi":/^dormitorio|^dorm\b|^habitacion/.test(e)?"dorm":/^espacio exterior|^exterior|^patio/.test(e)?"ext":/^estacionamiento|^cochera|^garage/.test(e)?"coch":/^pago|^forma de pago/.test(e)?"pago":/^presupuesto|^precio|^monto/.test(e)?"max":/^inversion|^vivienda|^destino/.test(e)?"fin":/^expensa/.test(e)?"exp":/^observacion|^obs\b|^nota|^comentario|^otros?\b/.test(e)?"obs":/^tel|^cel|^whatsapp|^contacto/.test(e)?"phone":""}var H=["monte hermoso","punta alta","pehuen co","sierra de la ventana","tornquist","medanos","coronel dorrego","claromeco","necochea","mar del plata","tres arroyos","pigue","coronel suarez","bahia blanca","ingeniero white","general cerri","villa bordeu"],x=t=>/^[\s\-–—_.]*$/.test(t)||/^(no solicitado|no solicita|no pidio|sin especificar|no)$/.test(p(t).trim());function ae(t){let e=a=>t.filter(i=>i.f===a).map(i=>i.v.trim()).filter(Boolean).join(" ").trim(),o=U(),n=[],s=[],r=e("name"),d=e("phone"),c=/(\+?\d[\d\s\-()]{7,}\d)/.exec(r);c&&(d||(d=c[1]),r=r.replace(c[1]," ").replace(/\s+/g," ").trim()),o.name=ne(r).slice(0,80),o.phone=d,o.name||n.push("Falta el nombre."),O(o.phone)||n.push(/\b\d{3,4}\s*$/.test(r)?"Falta el teléfono completo (el número que figura en el nombre parece ser solo los últimos dígitos).":"Falta el teléfono.");let l=e("tipo");if(l&&!x(l)){let i=l.split(/\s*(?:,|\/|;|\by\b|\bo\b)\s*/i).filter(Boolean).map(u=>T(u)).filter(Boolean);o.tipos=[...new Set(i)],o.tipos.length||(o.tipos=["otro"],s.push("Inmueble: "+l))}let m=e("ubi");m=m.replace(/\(([^)]*)\)/g,(a,i)=>{let u=p(i).trim();return H.some(b=>u===b)?o.localidad=oe(i.trim()):i.trim()&&s.push("Ubicación: "+i.trim())," "}),m=m.replace(/\s+/g," ").trim(),x(m)||(o.zonas=m.split(/\s*(?:,|;|\/|\bo\b)\s*/i).map(a=>a.trim()).filter(Boolean).join(", ").slice(0,200));let g=e("dorm");if(g&&!x(g)){let a=/\d+/.exec(g);a&&(o.dorm=Math.min(20,parseInt(a[0],10)))}let h=e("ext");if(h&&!x(h)){let a=p(h);/patio|jardin|fondo|parque/.test(a)?o.ext="patio":/balcon|terraza/.test(a)?o.ext="balcon":/cualquiera|indistinto|con espacio|si\b/.test(a)?o.ext="cualquiera":s.push("Espacio exterior: "+h)}let f=e("coch");if(f&&!x(f)&&!/^[\s\-–—]*$/.test(f.replace(/[^\p{L}\p{N}-]/gu,""))){let a=p(f);/\b(sin|no)\b/.test(a)&&!/\bsi\b/.test(a)?o.coch="":/cochera|garage|garaje|\bsi\b|\bcon\b|estaciona/.test(a)&&(o.coch="si")}let w=e("pago");if(w&&!x(w)){let a=p(w),i=/contado|efectivo|cash/.test(a),u=/\ba\.?\s?c\.?(\s|$)|credito|apto|hipotec/.test(a);o.pago=i&&u?"indistinto":u?"credito":i?"contado":/indistinto|ambos|cualquiera/.test(a)?"indistinto":""}let y=e("max");if(y){let a=N(y);a?(o.max=a.n,a.cur==="ARS"&&s.push("Presupuesto indicado en pesos: "+y)):n.push("No pude leer el presupuesto.")}else n.push("Falta el presupuesto máximo.");let $=e("fin");if($&&!x($)){let a=p($);o.fin=/invers/.test(a)?"inversion":/vivienda|vivir|hogar/.test(a)?"vivienda":"";let i=/\(([^)]*)\)/.exec($);i&&(o.finNota=i[1].trim().slice(0,60))}let S=e("exp");S&&!x(S)&&(o.exp=/baja/.test(p(S))?"Lo más bajas posibles":S.slice(0,80));let C=e("obs");return o.obs=[C&&!x(C)?C:"",...s].filter(Boolean).join(". ").slice(0,800),{c:o,warns:n}}function B(t){let e=String(t||"").replace(/\r/g,"").split(`
+`).map(r=>r.replace(/[\p{Extended_Pictographic}️‍]/gu,"").replace(/\*/g,"").replace(/ /g," ").trim()),o=[],n=[],s=()=>{n.some(r=>r.f)&&o.push(n),n=[]};for(let r of e){if(!r)continue;if(/^\(.*\)$/.test(r)&&n.length){let g=r.slice(1,-1).trim();n[n.length-1].f==="ubi"&&/barrio|zona/.test(p(g))?n.push({f:"obs",v:"Preferencia: "+g.replace(/^con preferencia en\s*/i,"")}):n.push({f:"obs",v:g});continue}let d=r.indexOf(":"),c="",l=r;if(d>0&&(c=r.slice(0,d),l=r.slice(d+1),c.indexOf("(")>=0&&c.indexOf(")")<0)){let h=r.indexOf(")"),f=h>0?r.indexOf(":",h):-1;f>0&&(c=r.slice(0,f),l=r.slice(f+1))}let m=c?re(c):"";if(!m){n.length&&(n[n.length-1].v+=" "+r);continue}(m==="name"||n.some(g=>g.f===m))&&s(),n.push({f:m,v:l.trim()})}return s(),o.map(ae)}function K(t){let e=[],o=s=>String(s).replace(/\B(?=(\d{3})+(?!\d))/g,".");e.push(`*NOMBRE: ${(t.name||"").toUpperCase()}*`),t.phone&&e.push(`*Teléfono:* ${t.phone}`),e.push(`*Inmueble:* ${t.tipos.length?t.tipos.map(E).join(" o "):"--"}`);let n=t.localidad&&p(t.localidad)!==p(A)?` (${t.localidad})`:"";return e.push(`*Ubicación:* ${t.zonas||"--"}${n}`),e.push(`*Dormitorios:* ${t.dorm==null?"--":t.dorm}`),e.push(`*Espacio exterior:* ${t.ext==="patio"?"Con patio":t.ext==="balcon"?"Con balcón o terraza":t.ext==="cualquiera"?"Con espacio exterior":"--"}`),e.push(`*Estacionamiento:* ${t.coch==="si"?"Con cochera":"--"}`),e.push(`*Pago (contado o apto crédito):* ${t.pago==="contado"?"Contado":t.pago==="credito"?"A.C.":t.pago==="indistinto"?"Contado o A.C.":"--"}`),e.push(`*Presupuesto máximo:* ${t.max==null?"--":"USD "+o(t.max)}`),e.push(`*Inversión o vivienda:* ${t.fin==="vivienda"?"Para vivienda":t.fin==="inversion"?"Inversión":"--"}${t.finNota?` (${t.finNota})`:""}`),e.push(`*Expensas:* ${t.exp||"--"}`),t.obs&&e.push(`*Observación:* ${t.obs}`),e.join(`
+`)}function j(t){let e=5381;for(let o=0;o<t.length;o++)e=(e<<5)+e+t.charCodeAt(o)|0;return(e>>>0).toString(36)}function _(t){return String(t||"").trim().toLowerCase().replace(/^https?:\/\/(www\.)?/,"").replace(/[?#].*$/,"").replace(/\/+$/,"")}function L(t){let e=_(t.sourceUrl);return e?"u:"+j(e)+e.length.toString(36):"t:"+j(p(t.title)+"|"+(t.price??"")+"|"+p(t.zone)+"|"+p(t.publisher))}var ce=new Set(["barrio","zona","cerca","uni","universitario","desde","hasta","del","los","las","con","por","una","que","sur","ubicacion"]),le=t=>p(t).split(/[^a-z0-9ñ]+/).filter(e=>e.length>=3&&!ce.has(e)),z=(t,e)=>new RegExp("(^|[^a-z0-9])"+e.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"([^a-z0-9]|$)").test(t);function pe(t){return String(t||"").split(/\s*(?:,|;|\/|\bo\b)\s*/i).map(e=>le(e)).filter(e=>e.length)}var v=t=>"USD "+String(Math.round(t)).replace(/\B(?=(\d{3})+(?!\d))/g,".");function q(t){return T(t.propertyType||"")||T(t.title||"")}function Z(t,e){let o=[],n=(i,u,b)=>o.push({k:i,st:u,txt:b}),s=p((t.zone||"")+" "+(t.title||"")),r=p(t.description||""),d=p((t.features||[]).join(" ")+" "+(t.title||"")),c=s+" "+r.slice(0,1200)+" "+d;if(t.operation==="Alquiler"&&n("operacion","no","Es un alquiler"),e.tipos.length){let i=q(t);i?e.tipos.includes(i)||i==="ph"&&e.tipos.includes("casa")&&e.tipos.includes("depto")?n("tipo","ok",E(i)):n("tipo","no",`Es ${E(i).toLowerCase()} y busca ${e.tipos.map(u=>E(u).toLowerCase()).join(" o ")}`):n("tipo","unk","Tipo sin confirmar")}e.max!=null&&(t.price==null?n("precio","unk","Sin precio"):t.currency!=="USD"?n("precio","unk","Precio en pesos"):t.price<=e.max?n("precio","ok",`${v(t.price)} (tope ${v(e.max)})`):t.price<=e.max*1.1?n("precio","warn",`${v(t.price)}: un poco arriba del tope (${v(e.max)})`):n("precio","no",`${v(t.price)}: supera el tope (${v(e.max)})`)),e.dorm!=null&&e.dorm>0&&(t.dormitorios==null?n("dorm","unk","Dormitorios sin confirmar"):t.dormitorios>=e.dorm?n("dorm","ok",`${t.dormitorios} dorm. (pide ${e.dorm})`):n("dorm","no",`${t.dormitorios} dorm. (pide ${e.dorm})`));let l=p(e.localidad||A),m=H.filter(i=>i!==l&&z(c,i)&&!(l==="bahia blanca"&&i==="bahia blanca"));l!=="bahia blanca"?z(c,l)?n("localidad","ok",e.localidad):m.length?n("localidad","no","Está en otra localidad"):n("localidad","unk","Localidad sin confirmar"):m.length&&!z(c,"bahia blanca")&&n("localidad","no","Está en otra localidad");let g=pe(e.zonas);if(g.length){let i=g.find(u=>u.every(b=>z(s,b)));i?n("zona","ok",i.map(u=>u[0].toUpperCase()+u.slice(1)).join(" ")):g.some(u=>u.every(b=>z(r.slice(0,1200),b)))?n("zona","unk","Zona sin confirmar (aparece en la descripción)"):p(t.zone||"").replace(/bahia blanca|buenos aires|argentina/g,"").replace(/[^a-z0-9]/g,"").length>=4?n("zona","no","Otra zona: "+(t.zone||"").replace(/[⟦⟧]/g,"").slice(0,40)):n("zona","unk","Zona sin confirmar")}if(e.coch==="si"&&(t.cocheras!=null?n("cochera",t.cocheras>0?"ok":"warn",t.cocheras>0?"Con cochera":"Sin cochera (la pidió)"):/cochera|garage|garaje/.test(c)?n("cochera","ok","Con cochera"):n("cochera","unk","Cochera sin confirmar")),e.ext&&e.ext!==""){let i=/patio|jardin|parque|fondo/.test(c),u=/balcon|terraza/.test(c),b=e.ext==="patio"?i:e.ext==="balcon"?u:i||u;n("exterior",b?"ok":"unk",b?"Tiene espacio exterior":"Espacio exterior sin confirmar")}e.pago==="credito"&&(/no (es )?apto (a )?credito/.test(c)?n("pago","warn","No es apta crédito"):/apto (a )?(credito|banc)/.test(c)?n("pago","ok","Apta crédito"):n("pago","unk","Apto crédito sin confirmar"));let h=["operacion","tipo","precio","dorm","zona","localidad"],f=o.filter(i=>h.includes(i.k)),w=f.some(i=>i.st==="no"),y=f.filter(i=>i.st==="ok").length,$=e.max==null||o.some(i=>i.k==="precio"&&(i.st==="ok"||i.st==="warn")),S=y>=2&&$,C=!w&&S,a=!o.some(i=>i.st==="warn"||i.st==="unk");return{match:C,level:C?a?"alta":"media":"",checks:o}}function Y(t){let e={p:0,i:0,d:0,total:0};for(let o of t.hist||[])e[o.s]++,e.total++;return e}var ue=600;function I(t,e,o){return{k:L(t),t:F(t.title).slice(0,160),pr:t.price,cu:t.currency,z:F(t.zone).slice(0,80),ty:t.propertyType.slice(0,40),pu:t.publisher.slice(0,80),img:t.photos[0]||"",so:t.sourceUrl,cid:e,at:o,s:"p",r:"",sat:o}}function W(t,e,o,n){let s=new Map(t.hist.map(d=>[d.k,d])),r=[];for(let d of e){let c=I(d,o,n),l=s.get(c.k);if(l){l.cid!==o&&(l.cid=o,l.at=n,l.s==="d"&&(l.s="p",l.r="",l.sat=n));continue}s.set(c.k,c),r.push(c)}return t.hist=[...r,...t.hist].slice(0,ue),t.updated=n,r.length}return ee(de);})();</script>
 <script>(function () {
   'use strict';
-  var C = window.Core;
+  var C = Object.assign({}, window.Core, window.CoreCli);
   var A = window.__ASSETS;
   var BASE = location.href.split('#')[0].split('?')[0];
   var MAX_DESC = 4500;
@@ -1295,6 +1471,8 @@ ${At}
     if (id === 'mPrev') $('#prevFrame').srcdoc = '';
     if (id === 'mEdit') editClosed();
     if (id === 'mRes') res.tick++;
+    if (id === 'mPrint') $('#printFrame').srcdoc = '';
+    if (id === 'mCli') cs = null;
   }
   document.addEventListener('click', function (e) {
     var x = e.target.closest && e.target.closest('[data-close]');
@@ -1315,7 +1493,7 @@ ${At}
   // ------------------------------------------------------------ estado guardado en este navegador
   var cfg = jget('bd_cfg', {});
   var fichas = jget('bd_fichas', []);
-  var draft = { label: '', heading: '', greeting: '', editId: '', replaceTmp: '', items: [] };
+  var draft = { label: '', clientId: '', heading: '', greeting: '', editId: '', replaceTmp: '', items: [], added: [], dismiss: {} };
   var uid = 0;
   var res = { entry: null, carpeta: null, tick: 0 };
   var ghCache = null;
@@ -1351,11 +1529,13 @@ ${At}
     $$('#tabs .tab, #tabbar button').forEach(function (b) { b.classList.toggle('on', b.dataset.v === v); });
     if (v === 'list') { renderList(); checkPending(); }
     if (v === 'set') fillSettings();
+    if (v === 'cli') { renderClients(); renderBackupLine(); }
     window.scrollTo(0, 0);
   }
   $$('#tabs .tab, #tabbar button').forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.v); }); });
   function updateCounts() {
     ['#tabCount', '#tabCount2'].forEach(function (s) { var b = $(s); b.textContent = fichas.length; b.hidden = !fichas.length; });
+    updateCliCount();
   }
   function updateConn() {
     var ok = connected();
@@ -1465,23 +1645,25 @@ ${At}
     saveDraftT = setTimeout(function () {
       var keep = draft.items.filter(function (i) { return i.state === 'ok'; }).map(function (i) { return { url: i.url, f: i.f, warns: i.warns }; });
       if (!keep.length && !draft.label && !draft.heading && !draft.greeting) { lsSet('bd_draft', ''); return; }
-      jset('bd_draft', { label: draft.label, heading: draft.heading, greeting: draft.greeting, editId: draft.editId, replaceTmp: draft.replaceTmp, items: keep });
+      jset('bd_draft', { label: draft.label, clientId: draft.clientId, heading: draft.heading, greeting: draft.greeting, editId: draft.editId, replaceTmp: draft.replaceTmp, items: keep });
     }, 300);
   }
   function loadDraft() {
     var d = jget('bd_draft', null);
     if (!d || !Array.isArray(d.items)) return;
-    draft = { label: d.label || '', heading: d.heading || '', greeting: d.greeting || '', editId: d.editId || '', replaceTmp: d.replaceTmp || '', items: [] };
+    draft = { label: d.label || '', clientId: d.clientId || '', heading: d.heading || '', greeting: d.greeting || '', editId: d.editId || '', replaceTmp: d.replaceTmp || '', items: [], added: [], dismiss: {} };
     d.items.forEach(function (i) { if (i && i.f) draft.items.push({ uid: ++uid, state: 'ok', url: i.url || '', f: i.f, warns: i.warns || [] }); });
   }
   function okItems() { return draft.items.filter(function (i) { return i.state === 'ok'; }); }
   function syncFields() {
     $('#fLabel').value = draft.label; $('#fHeading').value = draft.heading; $('#fGreeting').value = draft.greeting;
     if (draft.heading || draft.greeting) $('#optBox').open = true;
+    syncClientLine();
   }
   ['fLabel', 'fHeading', 'fGreeting'].forEach(function (id) {
     $('#' + id).addEventListener('input', function () {
       draft[id === 'fLabel' ? 'label' : id === 'fHeading' ? 'heading' : 'greeting'] = this.value;
+      if (id === 'fLabel') pickClientFromLabel();
       refreshSummary(); saveDraft();
     });
   });
@@ -1515,13 +1697,14 @@ ${At}
         li.innerHTML = '<div class="th">' + (f.photos[0] ? imgHtml(f.photos[0], 184, 140, '') : icon('home')) + '<span class="n">' + (i + 1) + '</span></div>' +
           '<div class="bd"><span class="t">' + esc(plain(f.title) || 'Sin título') + '</span><div class="m">' + esc(itemMeta(f) || 'Sin datos') + '</div>' +
           (f.publisher ? '<div class="m">' + esc(f.publisher) + '</div>' : '') +
-          (chips.length ? '<div class="wr">' + chips.map(function (c) { return '<span class="wchip">' + esc(c) + '</span>'; }).join('') + '</div>' : '') + '</div>' +
+          (chips.length || itemFlags(it) ? '<div class="wr">' + chips.map(function (c) { return '<span class="wchip">' + esc(c) + '</span>'; }).join('') + itemFlags(it) + '</div>' : '') + '</div>' +
           '<div class="ab"><div class="ab row2"><button class="ib" data-a="up" title="Subir" aria-label="Subir"' + (i === 0 ? ' disabled' : '') + '>' + icon('up') + '</button><button class="ib" data-a="down" title="Bajar" aria-label="Bajar"' + (i === draft.items.length - 1 ? ' disabled' : '') + '>' + icon('down') + '</button></div>' +
           '<div class="ab row2"><button class="ib" data-a="edit" title="Editar" aria-label="Editar">' + icon('edit') + '</button><button class="ib dng" data-a="del" title="Quitar" aria-label="Quitar">' + icon('trash') + '</button></div></div>';
       }
       ul.appendChild(li);
     });
     $('#itemsEmpty').hidden = draft.items.length > 0;
+    renderMatches();
     refreshSummary(); saveDraft();
   }
   function refreshSummary() {
@@ -1795,6 +1978,12 @@ ${At}
       var go = await ask({ title: 'Sin etiqueta', text: 'No pusiste a qué cliente se la mandás, y después no vas a poder distinguir esta ficha en "Mis fichas". ¿Publicar igual?', ok: 'Publicar igual', danger: false });
       if (!go) { $('#fLabel').focus(); return; }
     }
+    var dc = dupCount();
+    if (dc.n) {
+      var who = (clientById(draft.clientId) || {}).name || 'el cliente';
+      var go2 = await ask({ title: 'Ya se las mandaste', text: (dc.n === 1 ? 'Una de las propiedades' : dc.n + ' de las propiedades') + ' ya se le envió a ' + who + (dc.d ? ' (' + (dc.d === 1 ? 'y la descartó' : dc.d + ' las descartó') + ')' : '') + '. Están marcadas en la lista. ¿Publicar igual?', ok: 'Publicar igual', danger: false });
+      if (!go2) return;
+    }
     setBusy(true, 'Publicando…');
     try {
       var g = gh(), editing = !!draft.editId;
@@ -1814,6 +2003,7 @@ ${At}
         titles: items.map(function (f) { return plain(f.title); }).slice(0, 3),
         og: { title: og.title, description: og.description, image: og.image }
       };
+      recordSent(entry, items, draft.replaceTmp);
       if (draft.replaceTmp) { fichas = fichas.filter(function (x) { return x.id !== draft.replaceTmp; }); }
       upsertEntry(entry);
       rememberPublishers(items);
@@ -1839,11 +2029,12 @@ ${At}
     var pubs = jget('bd_pubs', []);
     $('#pubs').innerHTML = pubs.map(function (p) { return '<option value="' + esc(p) + '">'; }).join('');
     var seen = {}, labels = [];
+    activeClients().forEach(function (c) { if (!seen[c.name]) { seen[c.name] = 1; labels.push(c.name); } });
     fichas.forEach(function (f) { if (f.label && !seen[f.label]) { seen[f.label] = 1; labels.push(f.label); } });
     $('#labels').innerHTML = labels.slice(0, 80).map(function (l) { return '<option value="' + esc(l) + '">'; }).join('');
   }
   function resetBuilder() {
-    draft = { label: '', heading: '', greeting: '', editId: '', replaceTmp: '', items: [] };
+    draft = { label: '', clientId: '', heading: '', greeting: '', editId: '', replaceTmp: '', items: [], added: [], dismiss: {} };
     queue = []; syncFields(); $('#optBox').open = false; renderItems(); setStatus(DEFAULT_HINT_TXT);
   }
   var DEFAULT_HINT_TXT = $('#autoStatus').textContent;
@@ -1863,6 +2054,7 @@ ${At}
         id: c.id, label: draft.label.trim(), created: now, updated: now, url: BASE + '#c=' + tok, rev: c.u, status: 'tmp', n: items.length, data: c,
         covers: items.map(function (f) { return f.photos[0]; }).filter(Boolean).slice(0, 3), titles: items.map(function (f) { return plain(f.title); }).slice(0, 3)
       };
+      recordSent(entry, items, draft.replaceTmp);
       if (draft.replaceTmp) fichas = fichas.filter(function (x) { return x.id !== draft.replaceTmp; });
       upsertEntry(entry); rememberPublishers(items); resetBuilder(); openResult(entry, {});
     } catch (e) { toast('No se pudo crear el link temporal'); }
@@ -1883,6 +2075,9 @@ ${At}
     opts = opts || {};
     var tmp = entry.status === 'tmp', myTick = ++res.tick;
     res.entry = entry;
+    res.client = clientById(entry.cid) || clientByName(entry.label);
+    var cnum = res.client ? C.waNumber(res.client.phone) : '';
+    $('#btnWaRes').innerHTML = icon('chat') + (cnum ? ' Enviar a ' + esc(firstName(res.client.name) || res.client.name) : ' Enviar por WhatsApp');
     $('#resTitle').textContent = opts.edited ? '¡Cambios guardados!' : tmp ? 'Link temporal listo' : '¡Ficha publicada!';
     $('#resUrl').value = entry.url;
     $('#resMsg').value = defaultMsg(entry);
@@ -1925,7 +2120,7 @@ ${At}
     if (!res.entry) return;
     var msg = $('#resMsg').value.trim();
     if (msg.indexOf(res.entry.url) < 0) msg += (msg ? '\n' : '') + res.entry.url;
-    window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    window.open('https://wa.me/' + (res.client ? C.waNumber(res.client.phone) : '') + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
   });
   $('#btnNewRes').addEventListener('click', function () { closeModal('mRes'); show('new'); });
 
@@ -1945,19 +2140,26 @@ ${At}
       var st = f.status === 'live' ? '<span class="st live">' + icon('check') + ' Publicada</span>' : f.status === 'pend' ? '<span class="st pend"><span class="spin" style="width:11px;height:11px;border-width:2px"></span> Publicando…</span>' : '<span class="st tmp">' + icon('link') + ' Link temporal</span>';
       d.innerHTML = '<div class="cv">' + cover + '</div><div class="bd">' +
         '<div class="lb"><span class="tx' + (f.label ? '' : ' none') + '" title="' + esc(f.label) + '">' + esc(f.label || 'Sin etiqueta') + '</span><button class="ib" data-a="label" title="Cambiar etiqueta" aria-label="Cambiar etiqueta">' + icon('edit') + '</button></div>' +
-        '<div class="sub">' + f.n + (f.n === 1 ? ' propiedad' : ' propiedades') + ' · ' + esc(fmtDate(f.updated)) + '</div>' + st +
+        '<div class="sub">' + f.n + (f.n === 1 ? ' propiedad' : ' propiedades') + ' · ' + esc(fmtDate(f.updated)) + '</div>' + st + cliChip(f) +
         '<div class="ttl">' + (f.titles || []).map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('') + (f.n > (f.titles || []).length ? '<span>y ' + (f.n - f.titles.length) + ' más…</span>' : '') + '</div></div>' +
         '<div class="ac"><button class="btn small" data-a="share">' + icon('chat') + ' Compartir</button><button class="btn ghost small" data-a="copy">' + icon('copy') + ' Copiar</button><button class="btn ghost small" data-a="view">' + icon('ext') + ' Ver</button><button class="btn ghost small" data-a="edit">' + icon('edit') + ' Editar</button><button class="btn danger small" data-a="del" aria-label="Eliminar">' + icon('trash') + '</button></div>';
       box.appendChild(d);
     });
     fillDatalists();
   }
+  function cliChip(f) {
+    var c = clientById(f.cid); if (!c) return '';
+    var n = { p: 0, i: 0, d: 0 }; (c.hist || []).forEach(function (h) { if (h.cid === f.id) n[h.s]++; });
+    var t = 'Cliente: ' + c.name + (n.i ? ' · ' + n.i + (n.i === 1 ? ' le interesa' : ' le interesan') : '') + (n.d ? ' · ' + n.d + (n.d === 1 ? ' descartada' : ' descartadas') : '');
+    return '<div class="chips"><button class="chp y" data-a="cli" title="Ver el historial de propiedades de este cliente">' + icon('users') + ' ' + esc(t) + '</button></div>';
+  }
   $('#qList').addEventListener('input', function () { q = this.value; renderList(); });
   $('#fList').addEventListener('click', function (e) {
     var b = e.target.closest('[data-a]'); if (!b) return;
     var card = b.closest('.fc'), f = findEntry(card.dataset.id); if (!f) return;
     var a = b.dataset.a;
-    if (a === 'label') editLabel(card, f);
+    if (a === 'cli') openCli(f.cid, 'hist');
+    else if (a === 'label') editLabel(card, f);
     else if (a === 'share') { res.carpeta = null; openResult(f, {}); }
     else if (a === 'copy') copy(f.url, 'Link copiado');
     else if (a === 'view') window.open(f.url, '_blank', 'noopener');
@@ -1995,7 +2197,7 @@ ${At}
     toast('Cargando la ficha…');
     try {
       var c = await loadCarpeta(f);
-      draft = { label: f.label || '', heading: c.h || '', greeting: c.g || '', editId: f.status === 'tmp' ? '' : f.id, replaceTmp: f.status === 'tmp' ? f.id : '', items: [] };
+      draft = { label: f.label || '', clientId: (clientById(f.cid) || {}).id || '', heading: c.h || '', greeting: c.g || '', editId: f.status === 'tmp' ? '' : f.id, replaceTmp: f.status === 'tmp' ? f.id : '', items: [], added: [], dismiss: {} };
       C.carpetaItems(c).forEach(function (p) { draft.items.push({ uid: ++uid, state: 'ok', url: p.sourceUrl || '', f: p, warns: [] }); });
       syncFields(); renderItems(); show('new');
     } catch (e) { toast('No pude cargar la ficha: ' + ghMessage(e)); }
@@ -2088,11 +2290,12 @@ ${At}
     saveCfg(); toast('Número guardado');
   });
   $('#btnExport').addEventListener('click', function () {
-    var data = { app: 'fichas-badenheuer', v: 1, at: new Date().toISOString(), owner: cfg.owner, repo: cfg.repo, wa: cfg.wa || '', fichas: fichas, publishers: jget('bd_pubs', []) };
+    var data = { app: 'fichas-badenheuer', v: 1, at: new Date().toISOString(), owner: cfg.owner, repo: cfg.repo, wa: cfg.wa || '', fichas: fichas, clients: cliStore, publishers: jget('bd_pubs', []) };
     var a = document.createElement('a');
     a.href = URL.createObjectURL(new Blob([JSON.stringify(data)], { type: 'application/json' }));
     a.download = 'fichas-copia-' + new Date().toISOString().slice(0, 10) + '.json';
     document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(a.href); }, 2000);
+    lsSet('bd_lastbackup', new Date().toISOString()); renderBackupLine();
   });
   $('#fileImport').addEventListener('change', function () {
     var file = this.files && this.files[0]; if (!file) return;
@@ -2101,7 +2304,7 @@ ${At}
       try {
         var d = JSON.parse(r.result);
         if (!d || d.app !== 'fichas-badenheuer' || !Array.isArray(d.fichas)) throw new Error('x');
-        var n = 0;
+        var n = 0, nc = importClients(d.clients);
         d.fichas.forEach(function (f) {
           if (!f || !f.id || !f.url) return;
           var cur = findEntry(f.id);
@@ -2109,7 +2312,8 @@ ${At}
         });
         if (Array.isArray(d.publishers)) jset('bd_pubs', d.publishers.concat(jget('bd_pubs', [])).slice(0, 60));
         if (!cfg.owner && d.owner) { cfg.owner = d.owner; cfg.repo = d.repo; saveCfg(); }
-        saveFichas(); renderList(); toast(n ? 'Se restauraron ' + n + ' fichas' : 'No había fichas nuevas para restaurar');
+        saveFichas(); renderList(); loadClients();
+        toast(n || nc ? 'Se restauraron ' + n + (n === 1 ? ' ficha' : ' fichas') + (nc ? ' y ' + nc + (nc === 1 ? ' cliente' : ' clientes') : '') : 'No había nada nuevo para restaurar');
       } catch (e) { toast('Ese archivo no es una copia de seguridad válida'); }
       inp.value = '';
     };
@@ -2126,8 +2330,783 @@ ${At}
     lsSet('bd_proxy', u.split('?')[0].replace(/\/$/, '')); toast('Listo: ahora se usa tu lector propio');
   });
 
+    // ============================================================ CLIENTES (compradores)
+  // Este archivo se pega dentro de app.js (mismo alcance): usa sus ayudas ($, esc, cliApi, toast, ask, draft…).
+  // cliApi(ruta, datos): en Netlify es la API del servidor; en la versión GitHub guarda todo en este navegador.
+  var clients = [];
+  var clientsVer = 0;
+  var cliState = 'idle'; // idle | loading | ok | err
+  var cliErr = '';
+  var cliQ = '';
+  var cliFilter = 'act'; // act | pausa | cerrado | all
+  var cs = null;         // cliente abierto en la ventana: { id, tab, hf, reasonKey }
+
+  function clientById(id) { if (!id) return null; for (var i = 0; i < clients.length; i++) if (clients[i].id === id) return clients[i]; return null; }
+  function clientByName(name) {
+    var n = C.norm(name).trim(); if (!n) return null;
+    for (var i = 0; i < clients.length; i++) if (C.norm(clients[i].name).trim() === n) return clients[i];
+    return null;
+  }
+  function upsertClient(c) {
+    if (!c || !c.id) return;
+    var i = clients.findIndex(function (x) { return x.id === c.id; });
+    if (i >= 0) clients[i] = c; else clients.push(c);
+    clients.sort(function (a, b) { return C.norm(a.name).localeCompare(C.norm(b.name)); });
+    clientsVer++; updateCounts(); fillDatalists();
+  }
+  function usd(n) { return n == null ? '' : 'USD ' + fmt(n); }
+  function activeClients() { return clients.filter(function (c) { return c.estado === 'activo'; }); }
+  function updateCliCount() {
+    var n = activeClients().length;
+    ['#tabCountC', '#tabCountC2'].forEach(function (s) { var b = $(s); if (!b) return; b.textContent = n; b.hidden = !n; });
+  }
+  function loadClients() {
+    cliState = 'loading'; renderClients();
+    return cliApi('/api/clients').then(function (r) {
+      clients = r.clients || []; clientsVer++; cliState = 'ok';
+      updateCounts(); fillDatalists(); renderClients(); syncClientLine(); renderItems(); renderList();
+    }, function (e) { cliState = 'err'; cliErr = e.message; renderClients(); });
+  }
+
+  // ---------------------------------------------------------- textos cortos de lo que busca
+  var EXT_TXT = { patio: 'Con patio', balcon: 'Balcón o terraza', cualquiera: 'Con espacio exterior' };
+  var PAGO_TXT = { contado: 'Contado', credito: 'Apto crédito', indistinto: 'Contado o crédito' };
+  var FIN_TXT = { vivienda: 'Para vivienda', inversion: 'Inversión' };
+  function wants(c) {
+    var w = [];
+    if (c.tipos && c.tipos.length) w.push(c.tipos.map(C.tipoLabel).join(' / '));
+    var zone = c.zonas || '';
+    if (c.localidad && C.norm(c.localidad) !== C.norm(C.DEFAULT_CITY)) zone += (zone ? ' · ' : '') + c.localidad;
+    if (zone) w.push(zone);
+    if (c.dorm != null) w.push(c.dorm + (c.dorm === 1 ? ' dormitorio' : ' dormitorios'));
+    if (c.ext) w.push(EXT_TXT[c.ext]);
+    if (c.coch) w.push('Con cochera');
+    if (c.pago) w.push(PAGO_TXT[c.pago]);
+    return w;
+  }
+  function finTxt(c) { return c.fin ? FIN_TXT[c.fin] + (c.finNota ? ' (' + c.finNota + ')' : '') : ''; }
+  function countsOf(c) { var n = { p: 0, i: 0, d: 0, total: 0 }; (c.hist || []).forEach(function (h) { n[h.s]++; n.total++; }); return n; }
+  function histLine(c) {
+    var n = countsOf(c);
+    if (!n.total) return 'Todavía no se le envió ninguna propiedad';
+    var t = [n.total + (n.total === 1 ? ' enviada' : ' enviadas')];
+    if (n.i) t.push(n.i + (n.i === 1 ? ' le interesa' : ' le interesan'));
+    if (n.d) t.push(n.d + (n.d === 1 ? ' descartada' : ' descartadas'));
+    return t.join(' · ');
+  }
+  function waLink(c, text) {
+    var num = C.waNumber(c.phone);
+    return 'https://wa.me/' + (num || '') + (text ? '?text=' + encodeURIComponent(text) : '');
+  }
+  function fmtDay(iso) { try { return new Date(iso).toLocaleDateString('es-AR', { day: '2-digit', month: 'short' }); } catch (e) { return ''; } }
+
+  // ---------------------------------------------------------- pestaña Clientes
+  var FILTERS = [['act', 'Buscando'], ['pausa', 'En pausa'], ['cerrado', 'Ya compraron'], ['all', 'Todos']];
+  function inFilter(c) { return cliFilter === 'all' || (cliFilter === 'act' ? c.estado === 'activo' : c.estado === cliFilter); }
+  function renderClients() {
+    var box = $('#cList'), msg = $('#cliMsg'), term = C.norm(cliQ).trim();
+    box.innerHTML = '';
+    var fb = $('#cliFilter');
+    fb.innerHTML = FILTERS.map(function (f) {
+      var n = clients.filter(function (c) { return f[0] === 'all' || (f[0] === 'act' ? c.estado === 'activo' : c.estado === f[0]); }).length;
+      return '<button class="pill' + (cliFilter === f[0] ? ' on' : '') + '" data-f="' + f[0] + '">' + f[1] + ' <span class="n">' + n + '</span></button>';
+    }).join('');
+    fb.hidden = !clients.length;
+    if (cliState === 'loading' && !clients.length) { msg.hidden = false; msg.innerHTML = '<span class="spin"></span><br>Cargando tus clientes…'; return; }
+    if (cliState === 'err' && !clients.length) { msg.hidden = false; msg.innerHTML = '<b>No pude cargar los clientes</b>' + esc(cliErr) + '<br><button class="btn navy small" id="btnRetryCli" type="button" style="margin-top:12px">Reintentar</button>'; $('#btnRetryCli').onclick = loadClients; return; }
+    if (!clients.length) { msg.hidden = false; msg.innerHTML = '<b>Todavía no cargaste clientes</b>Tocá “Nuevo cliente”, o pegá los mensajes de WhatsApp con lo que busca cada uno y los cargo todos juntos.'; return; }
+    var list = clients.filter(function (c) {
+      if (!inFilter(c)) return false;
+      return !term || C.norm(c.name + ' ' + c.phone + ' ' + c.zonas + ' ' + c.obs).indexOf(term) >= 0;
+    });
+    if (!list.length) { msg.hidden = false; msg.innerHTML = '<b>Sin resultados</b>Probá con otro filtro o con otra palabra.'; return; }
+    msg.hidden = true;
+    list.forEach(function (c, i) {
+      var d = document.createElement('article'); d.className = 'cc ' + c.estado; d.dataset.id = c.id; d.style.animationDelay = Math.min(i, 8) * 40 + 'ms';
+      var chips = wants(c).map(function (t) { return '<span class="chp">' + esc(t) + '</span>'; }).join('');
+      var fin = finTxt(c); if (fin) chips += '<span class="chp y">' + esc(fin) + '</span>';
+      var num = C.waNumber(c.phone);
+      d.innerHTML = '<div class="hd"><span class="nm" title="' + esc(c.name) + '">' + esc(c.name) + '</span>' + (c.estado === 'activo' ? '' : '<span class="chp gr">' + (c.estado === 'pausa' ? 'En pausa' : 'Ya compró') + '</span>') + '</div>' +
+        (c.phone ? '<a class="tel" href="' + esc(waLink(c)) + '" target="_blank" rel="noopener">' + esc(c.phone) + '</a>' : '<span class="tel no">Sin teléfono cargado</span>') +
+        (c.max != null ? '<div class="bud">' + esc(usd(c.max)) + ' <small>máximo</small></div>' : '<div class="bud"><small>Sin presupuesto cargado</small></div>') +
+        '<div class="chips">' + chips + '</div>' +
+        (c.exp || c.obs ? '<div class="hs">' + esc([c.exp ? 'Expensas: ' + c.exp : '', c.obs].filter(Boolean).join(' · ')).slice(0, 170) + '</div>' : '') +
+        '<div class="hs"><b>' + esc(histLine(c)) + '</b></div>' +
+        '<div class="ac"><button class="btn small" data-a="open">' + icon('edit') + ' Abrir</button><button class="btn ghost small" data-a="new">' + icon('new') + ' Nueva ficha</button>' + (num ? '<a class="btn ghost small" href="' + esc(waLink(c)) + '" target="_blank" rel="noopener">' + icon('chat') + ' WhatsApp</a>' : '') + '</div>';
+      box.appendChild(d);
+    });
+  }
+  $('#cliFilter').addEventListener('click', function (e) { var b = e.target.closest('[data-f]'); if (!b) return; cliFilter = b.dataset.f; renderClients(); });
+  $('#qCli').addEventListener('input', function () { cliQ = this.value; renderClients(); });
+  $('#cList').addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-a]'); if (!b) return;
+    var c = clientById(b.closest('.cc').dataset.id); if (!c) return;
+    if (b.dataset.a === 'open') openCli(c.id, 'busca');
+    else if (b.dataset.a === 'new') fichaFor(c);
+  });
+  $('#btnNewCli').addEventListener('click', function () { openCli(null, 'busca'); });
+
+  // ---------------------------------------------------------- ventana del cliente
+  var tipoBox = $('#c_tipos');
+  tipoBox.innerHTML = C.TIPOS.map(function (t) { return '<label class="tg"><input type="checkbox" value="' + t.k + '"><span>' + esc(t.label) + '</span></label>'; }).join('');
+  function cf(n) { return $('#c_' + n); }
+  function openCli(id, tab, prefill) {
+    var c = id ? clientById(id) : null;
+    if (id && !c) { toast('Ese cliente ya no existe'); return; }
+    cs = { id: id || '', tab: 'busca', hf: 'all', reasonKey: '' };
+    var v = c || Object.assign(C.emptyCliente(), prefill || {});
+    fillCliForm(v);
+    cf('paste').value = ''; setPasteHint('');
+    $('#cliPasteBox').hidden = !!c;
+    $('#mCliT').textContent = c ? c.name : 'Nuevo cliente';
+    $('#cliActs').hidden = !c; $('#cActDel').hidden = !c;
+    $$('#cliSeg button').forEach(function (b) { b.disabled = !c && b.dataset.t === 'hist'; });
+    setCliTab(tab === 'hist' && c ? 'hist' : 'busca');
+    openModal('mCli'); $('#mCli .sb').scrollTop = 0;
+    if (!c) setTimeout(function () { try { cf('name').focus(); } catch (e) { /* nada */ } }, 60);
+  }
+  function fillCliForm(v) {
+    cf('name').value = v.name || ''; cf('phone').value = v.phone || '';
+    $$('#c_tipos input').forEach(function (i) { i.checked = (v.tipos || []).indexOf(i.value) >= 0; });
+    cf('zonas').value = v.zonas || ''; cf('loc').value = v.localidad || C.DEFAULT_CITY;
+    cf('dorm').value = v.dorm == null ? '' : String(Math.min(v.dorm, 5)); cf('ext').value = v.ext || ''; cf('coch').value = v.coch || '';
+    cf('pago').value = v.pago || ''; cf('max').value = v.max == null ? '' : fmt(v.max); cf('fin').value = v.fin || '';
+    cf('finNota').value = v.finNota || ''; cf('estado').value = v.estado || 'activo'; cf('exp').value = v.exp || ''; cf('obs').value = v.obs || '';
+  }
+  // Auto-relleno: se pega el mensaje de WhatsApp y el formulario se completa solo
+  var DEFAULT_PASTE_HINT = $('#cliPasteHint').textContent;
+  function setPasteHint(t, ok) { var h = $('#cliPasteHint'); h.textContent = t || DEFAULT_PASTE_HINT; h.className = 'hint' + (ok ? ' ok' : ''); }
+  function autoFillFromText() {
+    var t = cf('paste').value.trim();
+    if (t.length < 15) { setPasteHint(''); return; }
+    var list = C.parseRequests(t);
+    if (!list.length) { setPasteHint('No encontré datos en ese texto. Tiene que tener líneas como “Inmueble: …” y “Presupuesto máximo: …”.'); return; }
+    if (list.length > 1) { closeModal('mCli'); openImport(t); return; }
+    var r = list[0], v = r.c;
+    var keepName = cf('name').value.trim(), keepPhone = cf('phone').value.trim();
+    fillCliForm(v);
+    if (!v.name && keepName) cf('name').value = keepName;
+    if (keepPhone) cf('phone').value = keepPhone;
+    cf('paste').value = '';
+    var miss = [];
+    if (!cf('name').value.trim()) miss.push('el nombre');
+    if (!cf('phone').value.trim()) miss.push('el teléfono');
+    setPasteHint('Listo: se completó lo que encontré. Revisá los datos' + (miss.length ? ' y agregá ' + miss.join(' y ') : '') + ', y guardá.', true);
+    var target = !cf('name').value.trim() ? cf('name') : !cf('phone').value.trim() ? cf('phone') : null;
+    if (target) setTimeout(function () { try { target.focus(); } catch (e) { /* nada */ } }, 50);
+  }
+  var pasteT = 0;
+  cf('paste').addEventListener('paste', function () { clearTimeout(pasteT); pasteT = setTimeout(autoFillFromText, 60); });
+  cf('paste').addEventListener('input', function () { clearTimeout(pasteT); pasteT = setTimeout(autoFillFromText, 700); });
+  function setCliTab(t) {
+    cs.tab = t;
+    $$('#cliSeg button').forEach(function (b) { b.classList.toggle('on', b.dataset.t === t); });
+    $('#cliBusca').hidden = t !== 'busca'; $('#cliHist').hidden = t !== 'hist';
+    $('#btnCliSave').hidden = t !== 'busca';
+    if (t === 'hist') renderHist();
+    var c = clientById(cs.id); $('#histN').textContent = c && c.hist && c.hist.length ? '(' + c.hist.length + ')' : '';
+  }
+  $('#cliSeg').addEventListener('click', function (e) { var b = e.target.closest('button[data-t]'); if (b && !b.disabled) setCliTab(b.dataset.t); });
+  cf('max').addEventListener('blur', function () { var n = parseNum(cf('max').value); cf('max').value = n == null ? '' : fmt(n); });
+  function readCliForm() {
+    var d = parseNum(cf('dorm').value);
+    return {
+      name: cf('name').value.trim(), phone: cf('phone').value.trim(),
+      tipos: $$('#c_tipos input:checked').map(function (i) { return i.value; }),
+      zonas: cf('zonas').value.trim(), localidad: cf('loc').value.trim(),
+      dorm: d, ext: cf('ext').value, coch: cf('coch').value, pago: cf('pago').value,
+      max: parseNum(cf('max').value), fin: cf('fin').value, finNota: cf('finNota').value.trim(),
+      estado: cf('estado').value, exp: cf('exp').value.trim(), obs: cf('obs').value.trim()
+    };
+  }
+  var cliSaving = false;
+  $('#btnCliSave').addEventListener('click', async function () {
+    if (cliSaving || !cs) return;
+    var data = readCliForm();
+    if (!data.name) { toast('Falta el nombre del cliente'); cf('name').focus(); return; }
+    if (data.phone && !C.waNumber(data.phone)) {
+      var go = await ask({ title: 'Revisá el teléfono', text: 'No entiendo ese número, así que el botón de WhatsApp no va a funcionar. Usá el formato 291 555-1234. ¿Guardar igual?', ok: 'Guardar igual', danger: false });
+      if (!go) { cf('phone').focus(); return; }
+    }
+    var dup = clientByName(data.name);
+    if (dup && dup.id !== cs.id) {
+      var go2 = await ask({ title: 'Ya existe un cliente con ese nombre', text: 'Ya tenés a "' + dup.name + '" en tu lista. ¿Cargar otro igual? (Podés agregarle el apellido para distinguirlos.)', ok: 'Cargar igual', danger: false });
+      if (!go2) return;
+    }
+    cliSaving = true; var btn = $('#btnCliSave'); btn.disabled = true;
+    try {
+      var wasNew = !cs.id;
+      var r = await cliApi('/api/client', { id: cs.id || undefined, cliente: data });
+      upsertClient(r.cliente);
+      var pendingLink = cs && cs.linkDraft;
+      closeModal('mCli');
+      if (pendingLink) { draft.clientId = r.cliente.id; draft.label = r.cliente.name; syncFields(); syncClientLine(); renderItems(); }
+      toast(wasNew ? (r.linked ? 'Cliente guardado. Sumé ' + r.linked + (r.linked === 1 ? ' ficha anterior' : ' fichas anteriores') + ' a su historial.' : 'Cliente guardado') : 'Cambios guardados');
+      renderClients(); renderList();
+    } catch (e) { toast(e.message); }
+    cliSaving = false; btn.disabled = false;
+  });
+  $('#cActDel').addEventListener('click', async function () {
+    var c = clientById(cs && cs.id); if (!c) return;
+    var ok = await ask({ title: 'Eliminar cliente', text: 'Se borra "' + c.name + '" con todo su historial de propiedades enviadas. Sus fichas publicadas siguen funcionando. No se puede deshacer.', ok: 'Eliminar' });
+    if (!ok) return;
+    try { await cliApi('/api/client/delete', { id: c.id }); } catch (e) { toast(e.message); return; }
+    clients = clients.filter(function (x) { return x.id !== c.id; }); clientsVer++;
+    if (draft.clientId === c.id) draft.clientId = '';
+    closeModal('mCli'); updateCounts(); fillDatalists(); renderClients(); syncClientLine(); renderItems(); toast('Cliente eliminado');
+    loadList();
+  });
+  $('#cActFicha').addEventListener('click', function () { var c = clientById(cs && cs.id); if (c) { closeModal('mCli'); fichaFor(c); } });
+  $('#cActWa').addEventListener('click', function () {
+    var c = clientById(cs && cs.id); if (!c) return;
+    if (!C.waNumber(c.phone)) { toast('Cargale el teléfono para poder escribirle'); cf('phone').focus(); return; }
+    window.open(waLink(c, 'Hola ' + (firstName(c.name) || '') + '!'), '_blank', 'noopener');
+  });
+  $('#cActCopy').addEventListener('click', function () { var c = clientById(cs && cs.id); if (c) copy(C.formatRequest(c), 'Copiado con el mismo formato que usás en WhatsApp'); });
+  $('#cActPrint').addEventListener('click', function () { var c = clientById(cs && cs.id); if (c) openPrint({ only: [c.id], fmt: 'fichas' }); });
+
+  // empezar una ficha nueva para este cliente
+  async function fichaFor(c) {
+    if (draft.items.length) {
+      var ok = await ask({ title: 'Reemplazar lo que estás armando', text: 'Tenés una ficha sin publicar en "Nueva ficha". Si seguís, se reemplaza por una nueva para ' + c.name + '.', ok: 'Seguir', danger: false });
+      if (!ok) return;
+    }
+    draft = { label: c.name, clientId: c.id, heading: '', greeting: '', editId: '', items: [], added: [], dismiss: {} };
+    queue = []; syncFields(); renderItems(); setStatus(DEFAULT_HINT_TXT); show('new');
+    setTimeout(function () { try { $('#linkIn').focus(); } catch (e) { /* nada */ } }, 100);
+  }
+
+  // ---------------------------------------------------------- historial de propiedades enviadas
+  var REASONS = ['Precio', 'Zona', 'Tamaño', 'Estado', 'No le gustó'];
+  function histFilterList(c) {
+    var h = (c.hist || []).slice();
+    var rank = { i: 0, p: 1, d: 2 };
+    h.sort(function (a, b) { return rank[a.s] - rank[b.s] || String(b.at).localeCompare(String(a.at)); });
+    return cs.hf === 'all' ? h : h.filter(function (x) { return x.s === cs.hf; });
+  }
+  function renderHist() {
+    var c = clientById(cs.id); if (!c) return;
+    var n = countsOf(c);
+    var F = [['all', 'Todas', n.total], ['i', 'Le interesan', n.i], ['p', 'Sin respuesta', n.p], ['d', 'Descartadas', n.d]];
+    $('#histFilter').innerHTML = F.map(function (f) { return '<button class="pill' + (cs.hf === f[0] ? ' on' : '') + '" data-f="' + f[0] + '">' + f[1] + ' <span class="n">' + f[2] + '</span></button>'; }).join('');
+    $('#histHint').textContent = n.total ? 'Marcá cada propiedad según lo que te diga ' + (firstName(c.name) || 'el cliente') + '. Las que no le gustaron quedan en gris (para no mandárselas de nuevo) y las que le interesan quedan destacadas.' : '';
+    var ul = $('#histList'); ul.innerHTML = '';
+    if (!n.total) { ul.innerHTML = '<li class="empty" style="margin:0"><svg class="i"><use href="#i-home"/></svg>Todavía no se le envió ninguna propiedad.<br>Cuando publiques una ficha con su nombre, las propiedades aparecen acá.</li>'; return; }
+    var list = histFilterList(c);
+    if (!list.length) { ul.innerHTML = '<li class="empty" style="margin:0">No hay propiedades en esta lista.</li>'; return; }
+    list.forEach(function (h, i) {
+      var li = document.createElement('li'); li.className = 'hi s-' + h.s; li.dataset.k = h.k; li.style.animationDelay = Math.min(i, 8) * 30 + 'ms';
+      var meta = [h.pr != null ? (h.cu === 'ARS' ? '$ ' : 'USD ') + fmt(h.pr) : '', h.z, h.pu].filter(Boolean).join(' · ');
+      var st = h.s === 'i' ? '<span class="chp y">' + icon('star') + ' Le interesa</span>' : h.s === 'd' ? '<span class="chp gr">Descartada' + (h.r ? ' · ' + esc(h.r) : '') + '</span>' : '<span class="chp">Sin respuesta</span>';
+      var btns = h.s === 'p' ? '<button class="ibx yes" data-a="i">' + icon('star') + ' Le interesa</button><button class="ibx no" data-a="dask">' + icon('x') + ' No le gustó</button>'
+        : h.s === 'i' ? '<button class="ibx no" data-a="dask">' + icon('x') + ' No le gustó</button><button class="ibx" data-a="p">' + icon('undo') + ' Deshacer</button>'
+        : '<button class="ibx yes" data-a="i">' + icon('star') + ' Le interesa</button><button class="ibx" data-a="p">' + icon('undo') + ' Reactivar</button>';
+      li.innerHTML = '<div class="th">' + (h.img ? imgHtml(h.img, 184, 140, '') : icon('home')) + '</div>' +
+        '<div class="bd"><span class="t">' + esc(plain(h.t) || 'Propiedad') + '</span><div class="m">' + esc(meta) + '</div>' +
+        '<div class="wr">' + st + '<span class="chp gr" style="background:transparent;padding-left:0">Enviada el ' + esc(fmtDay(h.at)) + '</span>' + (h.so ? '<a class="link" style="font-size:12.5px" href="' + esc(h.so) + '" target="_blank" rel="noopener">Ver aviso</a>' : '') + '</div></div>' +
+        '<div class="ab">' + btns + '<button class="ib dng" data-a="rm" title="Quitar del historial" aria-label="Quitar del historial">' + icon('trash') + '</button></div>' +
+        (cs.reasonKey === h.k ? '<div class="rs"><span>¿Por qué no le gustó?</span>' + REASONS.map(function (r) { return '<button class="ibx" data-a="d" data-r="' + esc(r) + '">' + esc(r) + '</button>'; }).join('') + '<button class="ibx no" data-a="d" data-r="">Sin motivo</button></div>' : '');
+      ul.appendChild(li);
+    });
+  }
+  $('#histFilter').addEventListener('click', function (e) { var b = e.target.closest('[data-f]'); if (!b) return; cs.hf = b.dataset.f; renderHist(); });
+  $('#histList').addEventListener('click', async function (e) {
+    var b = e.target.closest('button[data-a]'); if (!b) return;
+    var c = clientById(cs.id), k = b.closest('li').dataset.k, h = c && c.hist.find(function (x) { return x.k === k; }); if (!h) return;
+    var a = b.dataset.a;
+    if (a === 'dask') { cs.reasonKey = cs.reasonKey === k ? '' : k; renderHist(); return; }
+    if (a === 'rm') {
+      var ok = await ask({ title: 'Quitar del historial', text: 'Se saca esta propiedad del historial de ' + c.name + '. Si después se la querés mandar de nuevo, el panel ya no te va a avisar que se la enviaste.', ok: 'Quitar' });
+      if (!ok) return;
+      var keep = c.hist.slice(); c.hist = c.hist.filter(function (x) { return x.k !== k; }); renderHist(); renderClients(); setCliTab('hist');
+      try { await cliApi('/api/hist/remove', { id: c.id, key: k }); } catch (err) { c.hist = keep; renderHist(); renderClients(); toast(err.message); }
+      return;
+    }
+    var old = { s: h.s, r: h.r, sat: h.sat };
+    var s = a === 'd' ? 'd' : a === 'i' ? 'i' : 'p', reason = a === 'd' ? (b.dataset.r || '') : '';
+    h.s = s; h.r = reason; h.sat = new Date().toISOString(); cs.reasonKey = ''; clientsVer++;
+    renderHist(); renderClients(); renderItems();
+    try { await cliApi('/api/hist', { id: c.id, key: k, s: s, r: reason }); }
+    catch (err) { h.s = old.s; h.r = old.r; h.sat = old.sat; clientsVer++; renderHist(); renderClients(); renderItems(); toast(err.message); }
+  });
+
+  // ---------------------------------------------------------- cargar clientes pegando los mensajes de WhatsApp
+  var imp = [];
+  function openImport(text) {
+    $('#impText').value = text || ''; $('#impList').innerHTML = ''; imp = []; $('#btnImpSave').disabled = true; openModal('mImp');
+    if (text) readImport(); else setTimeout(function () { $('#impText').focus(); }, 60);
+  }
+  $('#btnImport').addEventListener('click', function () { openImport(''); });
+  $('#btnImpRead').addEventListener('click', readImport);
+  $('#impText').addEventListener('paste', function () { setTimeout(function () { if ($('#impText').value.trim().length >= 15) readImport(); }, 80); });
+  function readImport() {
+    var t = $('#impText').value.trim();
+    if (t.length < 15) { toast('Pegá primero los mensajes'); return; }
+    imp = C.parseRequests(t).map(function (r) { return { c: r.c, warns: r.warns, on: true, dup: r.c.name ? clientByName(r.c.name) : null }; });
+    imp.forEach(function (x) { if (x.dup) x.on = false; });
+    renderImp();
+    if (!imp.length) toast('No encontré ningún cliente en ese texto. Tiene que tener líneas como “Inmueble: …” y “Presupuesto máximo: …”.');
+  }
+  function impSummary(c) {
+    var w = wants(c); if (c.max != null) w.push('hasta ' + usd(c.max)); var f = finTxt(c); if (f) w.push(f);
+    return w.join(' · ');
+  }
+  function renderImp() {
+    var box = $('#impList'); box.innerHTML = '';
+    imp.forEach(function (x, i) {
+      var d = document.createElement('div'); d.className = 'ic' + (x.on ? '' : ' off'); d.dataset.i = i;
+      var extra = x.warns.filter(function (w) { return !/^Falta el (nombre|teléfono)/.test(w); });
+      d.innerHTML = '<label class="chk"><input type="checkbox" data-a="on"' + (x.on ? ' checked' : '') + '><span><b>Cargar este cliente</b></span></label>' +
+        '<div class="grid"><div class="span2"><label>Nombre *</label><input data-a="name" maxlength="80" value="' + esc(x.c.name) + '" placeholder="Falta el nombre"></div><div class="span2"><label>Teléfono</label><input data-a="phone" type="tel" maxlength="40" value="' + esc(x.c.phone) + '" placeholder="291 555-1234"></div></div>' +
+        '<div class="ln">' + esc(impSummary(x.c) || 'Sin datos de búsqueda') + '</div>' +
+        (x.c.obs ? '<div class="ln">Observaciones: ' + esc(x.c.obs) + '</div>' : '') +
+        '<div class="chips">' + (x.dup ? '<span class="chp am">Ya tenés un cliente con este nombre</span>' : '') + extra.map(function (w) { return '<span class="chp am">' + esc(w) + '</span>'; }).join('') + '</div>';
+      box.appendChild(d);
+    });
+    updateImpBtn();
+  }
+  function updateImpBtn() {
+    var n = imp.filter(function (x) { return x.on; }).length;
+    $('#btnImpSave').disabled = !n; $('#btnImpSave').textContent = n ? 'Guardar ' + n + (n === 1 ? ' cliente' : ' clientes') : 'Guardar clientes';
+  }
+  $('#impList').addEventListener('input', function (e) {
+    var card = e.target.closest('.ic'); if (!card) return; var x = imp[+card.dataset.i], a = e.target.dataset.a;
+    if (a === 'name') x.c.name = e.target.value; else if (a === 'phone') x.c.phone = e.target.value;
+  });
+  $('#impList').addEventListener('change', function (e) {
+    var card = e.target.closest('.ic'); if (!card || e.target.dataset.a !== 'on') return;
+    var x = imp[+card.dataset.i]; x.on = e.target.checked; card.classList.toggle('off', !x.on); updateImpBtn();
+  });
+  $('#btnImpSave').addEventListener('click', async function () {
+    var sel = imp.filter(function (x) { return x.on; });
+    var noName = sel.find(function (x) { return !String(x.c.name).trim(); });
+    if (noName) { toast('Completá el nombre de todos los clientes que vas a cargar'); return; }
+    var btn = this; btn.disabled = true; var done = 0, fail = 0, linked = 0;
+    for (var i = 0; i < sel.length; i++) {
+      btn.textContent = 'Guardando ' + (i + 1) + ' de ' + sel.length + '…';
+      try { var r = await cliApi('/api/client', { cliente: sel[i].c }); upsertClient(r.cliente); linked += r.linked || 0; done++; } catch (e) { fail++; }
+    }
+    closeModal('mImp'); renderClients(); renderList();
+    toast(done + (done === 1 ? ' cliente cargado' : ' clientes cargados') + (fail ? ' · ' + fail + ' no se pudieron guardar' : '') + (linked ? ' · sumé ' + linked + ' fichas anteriores a su historial' : ''));
+    updateImpBtn();
+  });
+
+  // ---------------------------------------------------------- imprimir
+  var printOpts = { only: null };
+  function printList() {
+    var who = $('#pr_who').value, ord = $('#pr_ord').value;
+    var list = printOpts.only ? printOpts.only.map(clientById).filter(Boolean) : clients.filter(function (c) { return who === 'all' || c.estado === 'activo' || (who === 'actp' && c.estado === 'pausa'); });
+    list = list.slice();
+    if (ord === 'max') list.sort(function (a, b) { return (b.max || 0) - (a.max || 0) || C.norm(a.name).localeCompare(C.norm(b.name)); });
+    else if (ord === 'new') list.sort(function (a, b) { return String(b.created).localeCompare(String(a.created)); });
+    else list.sort(function (a, b) { return C.norm(a.name).localeCompare(C.norm(b.name)); });
+    return list;
+  }
+  function openPrint(o) {
+    printOpts = { only: o && o.only ? o.only : null };
+    $('#pr_fmt').value = (o && o.fmt) || 'plan';
+    $$('#pr_who, #pr_ord').forEach(function (s) { s.disabled = !!printOpts.only; });
+    if (!printOpts.only && !clients.length) { toast('Todavía no cargaste clientes para imprimir'); return; }
+    openModal('mPrint'); renderPrint();
+  }
+  function renderPrint() {
+    var list = printList(), fmtSel = $('#pr_fmt').value;
+    $('#prInfo').textContent = list.length ? list.length + (list.length === 1 ? ' cliente' : ' clientes') + ' · ' + (fmtSel === 'plan' ? 'la hoja sale horizontal' : 'la hoja sale vertical') + '. Revisá la vista previa y tocá “Imprimir”: ahí también podés elegir “Guardar como PDF”.' : 'No hay clientes con ese filtro.';
+    $('#btnDoPrint').disabled = !list.length;
+    $('#printFrame').srcdoc = list.length ? buildPrintDoc(list, fmtSel) : '';
+  }
+  ['pr_fmt', 'pr_who', 'pr_ord'].forEach(function (id) { $('#' + id).addEventListener('change', renderPrint); });
+  $('#btnPrintAll').addEventListener('click', function () { openPrint({}); });
+  $('#btnDoPrint').addEventListener('click', function () {
+    var w = $('#printFrame').contentWindow; if (!w) return;
+    try { w.focus(); w.print(); } catch (e) { toast('No pude abrir la impresión. Probá con Ctrl+P.'); }
+  });
+
+  function buildPrintDoc(list, mode) {
+    var landscape = mode === 'plan';
+    var today = new Date().toLocaleDateString('es-AR', { day: '2-digit', month: 'long', year: 'numeric' });
+    var css = [
+      '@page{size:A4 ' + (landscape ? 'landscape' : 'portrait') + ';margin:11mm}',
+      '*{box-sizing:border-box}',
+      'body{font-family:Inter,Arial,Helvetica,sans-serif;color:#111;font-size:' + (landscape ? '10.5px' : '11.5px') + ';margin:0;line-height:1.35;-webkit-print-color-adjust:exact;print-color-adjust:exact}',
+      '.top{display:flex;align-items:center;gap:12px;border-bottom:3px solid #f6c244;padding-bottom:8px;margin-bottom:12px}',
+      '.top img{width:46px;height:46px;border-radius:50%}',
+      '.top b{font-family:"Playfair Display",Georgia,serif;font-size:17px;color:#192451;display:block}',
+      '.top small{color:#555}',
+      '.top .r{margin-left:auto;text-align:right;color:#555}',
+      '.top .r b{font-family:Inter,Arial,sans-serif;font-size:13px}',
+      'table{width:100%;border-collapse:collapse}',
+      'thead{display:table-header-group}',
+      'th{background:#192451;color:#fff;text-align:left;font-size:8.5px;text-transform:uppercase;letter-spacing:.05em;padding:5px 6px}',
+      'td{border-bottom:1px solid #d3d7e4;padding:5px 6px;vertical-align:top}',
+      'tr{break-inside:avoid;page-break-inside:avoid}',
+      'tbody tr:nth-child(even) td{background:#f4f5fa}',
+      '.nm{font-weight:700;font-size:12px;color:#192451}',
+      '.bud{font-weight:800;white-space:nowrap}',
+      '.mut{color:#666}',
+      '.tag{display:inline-block;border:1px solid #999;border-radius:8px;padding:0 5px;font-size:9px;color:#555;margin-top:2px}',
+      '.pc{border:1.5px solid #192451;border-radius:8px;margin:0 0 9mm;break-inside:avoid;page-break-inside:avoid;overflow:hidden}',
+      '.pc .ph{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;background:#192451;color:#fff;padding:9px 12px;border-bottom:3px solid #f6c244}',
+      '.pc .ph .n{font-family:"Playfair Display",Georgia,serif;font-size:21px;font-weight:700;line-height:1.1}',
+      '.pc .ph .t{font-size:13px;color:#f6c244;font-weight:700;margin-top:2px}',
+      '.pc .ph .b{text-align:right;font-size:17px;font-weight:800;color:#f6c244;line-height:1.1}',
+      '.pc .ph .b small{display:block;font-size:9px;font-weight:600;color:#cfd5ec;text-transform:uppercase;letter-spacing:.06em}',
+      '.kv td{border-bottom:1px solid #e1e4ee;padding:5px 12px}',
+      '.kv td:first-child{width:24%;font-weight:700;color:#192451;background:#f4f5fa;white-space:nowrap}',
+      '.kv tr:nth-child(even) td{background:#fff}.kv tr:nth-child(even) td:first-child{background:#f4f5fa}',
+      '.sec{padding:7px 12px 3px;font-size:9.5px;font-weight:800;text-transform:uppercase;letter-spacing:.07em;color:#192451}',
+      '.hs td{font-size:10.5px;padding:4px 12px}',
+      '.hs .d td{color:#8a8a8a}',
+      '.hs .i td{font-weight:700}',
+      '.notes{padding:4px 12px 10px}.notes div{border-bottom:1px solid #b9bfd3;height:19px}',
+      '.foot{margin-top:6px;color:#777;font-size:9px;text-align:center}'
+    ].join('\n');
+    var head = '<div class="top"><img src="' + esc(A.logo) + '" alt=""><div><b>Guillermo Badenheuer Inmobiliaria</b><small>Solicitantes de compra</small></div><div class="r"><b>' + list.length + (list.length === 1 ? ' cliente' : ' clientes') + '</b>Impreso el ' + esc(today) + '</div></div>';
+    var body = '';
+    if (mode === 'plan') {
+      var rows = list.map(function (c) {
+        var n = countsOf(c);
+        var loc = c.zonas || '—'; if (c.localidad && C.norm(c.localidad) !== C.norm(C.DEFAULT_CITY)) loc += ' (' + c.localidad + ')';
+        return '<tr><td><div class="nm">' + esc(c.name) + '</div>' + (c.estado === 'activo' ? '' : '<span class="tag">' + (c.estado === 'pausa' ? 'En pausa' : 'Ya compró') + '</span>') + '</td>' +
+          '<td>' + esc(c.phone || '—') + '</td>' +
+          '<td>' + esc(c.tipos && c.tipos.length ? c.tipos.map(C.tipoLabel).join(' / ') : '—') + '</td>' +
+          '<td>' + esc(loc) + '</td>' +
+          '<td>' + (c.dorm != null ? c.dorm : '—') + '</td>' +
+          '<td>' + esc(c.ext ? EXT_TXT[c.ext] : '—') + '</td>' +
+          '<td>' + (c.coch ? 'Sí' : '—') + '</td>' +
+          '<td>' + esc(c.pago ? PAGO_TXT[c.pago] : '—') + '</td>' +
+          '<td class="bud">' + esc(c.max != null ? usd(c.max) : '—') + '</td>' +
+          '<td>' + esc(c.fin ? finTxt(c) : '—') + '</td>' +
+          '<td>' + esc(c.exp || '—') + '</td>' +
+          '<td>' + esc(c.obs || '') + '</td>' +
+          '<td class="mut">' + (n.total ? n.total + ' env.' + (n.i ? '<br>' + n.i + ' interesan' : '') + (n.d ? '<br>' + n.d + ' desc.' : '') : '—') + '</td></tr>';
+      }).join('');
+      body = '<table><thead><tr><th>Cliente</th><th>Teléfono</th><th>Busca</th><th>Ubicación</th><th>Dorm.</th><th>Ext.</th><th>Coch.</th><th>Pago</th><th>Presup. máx.</th><th>Destino</th><th>Expensas</th><th>Observaciones</th><th>Enviadas</th></tr></thead><tbody>' + rows + '</tbody></table>';
+    } else {
+      body = list.map(function (c) {
+        var kv = [
+          ['Inmueble', c.tipos && c.tipos.length ? c.tipos.map(C.tipoLabel).join(' / ') : '—'],
+          ['Ubicación', (c.zonas || '—') + (c.localidad && C.norm(c.localidad) !== C.norm(C.DEFAULT_CITY) ? ' (' + c.localidad + ')' : '')],
+          ['Dormitorios', c.dorm != null ? c.dorm : '—'],
+          ['Espacio exterior', c.ext ? EXT_TXT[c.ext] : '—'],
+          ['Estacionamiento', c.coch ? 'Con cochera' : '—'],
+          ['Pago', c.pago ? PAGO_TXT[c.pago] : '—'],
+          ['Inversión o vivienda', c.fin ? finTxt(c) : '—'],
+          ['Expensas', c.exp || '—']
+        ];
+        if (c.obs) kv.push(['Observaciones', c.obs]);
+        var hist = (c.hist || []).slice();
+        var rank = { i: 0, p: 1, d: 2 };
+        hist.sort(function (a, b) { return rank[a.s] - rank[b.s] || String(b.at).localeCompare(String(a.at)); });
+        var hs = hist.length ? '<div class="sec">Propiedades enviadas (' + hist.length + ')</div><table class="hs"><tbody>' + hist.map(function (h) {
+          var sym = h.s === 'i' ? '★ Le interesa' : h.s === 'd' ? '✕ Descartada' : '• Enviada';
+          return '<tr class="' + h.s + '"><td style="width:19%">' + sym + '</td><td>' + esc(plain(h.t)) + '<br><span class="mut">' + esc([h.pr != null ? (h.cu === 'ARS' ? '$ ' : 'USD ') + fmt(h.pr) : '', h.z, h.pu].filter(Boolean).join(' · ')) + '</span></td><td style="width:15%">' + esc(fmtDay(h.at)) + '</td><td style="width:16%">' + esc(h.r || '') + '</td></tr>';
+        }).join('') + '</tbody></table>' : '<div class="sec">Propiedades enviadas</div><div style="padding:0 12px 6px" class="mut">Todavía no se le envió ninguna.</div>';
+        return '<section class="pc"><div class="ph"><div><div class="n">' + esc(c.name) + '</div><div class="t">' + esc(c.phone || 'Sin teléfono') + (c.estado === 'activo' ? '' : ' · ' + (c.estado === 'pausa' ? 'En pausa' : 'Ya compró')) + '</div></div><div class="b">' + esc(c.max != null ? usd(c.max) : 'Sin presupuesto') + '<small>Presupuesto máximo</small></div></div>' +
+          '<table class="kv"><tbody>' + kv.map(function (r) { return '<tr><td>' + esc(r[0]) + '</td><td>' + esc(r[1]) + '</td></tr>'; }).join('') + '</tbody></table>' + hs +
+          '<div class="sec">Notas</div><div class="notes"><div></div><div></div></div></section>';
+      }).join('');
+    }
+    return '<!doctype html><html lang="es-AR"><head><meta charset="utf-8"><title>Solicitantes de compra</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"><style>' + css + '</style></head><body>' + head + body + '<div class="foot">Guillermo Badenheuer Inmobiliaria · uso interno</div></body></html>';
+  }
+
+  // ---------------------------------------------------------- en "Nueva ficha": cliente elegido, repetidas y coincidencias
+  function syncClientLine() {
+    var line = $('#cliLine'), hint = $('#cliHint'), name = draft.label.trim();
+    var c = clientById(draft.clientId);
+    line.hidden = !name && !c;
+    if (!line.hidden) {
+      if (c) {
+        var w = wants(c); if (c.max != null) w.push('hasta ' + usd(c.max));
+        line.innerHTML = '<span class="st live">' + icon('check') + ' Cliente de tu lista</span><span class="hint">' + esc(w.join(' · ') || 'Sin datos de búsqueda') + '</span><button class="link" type="button" data-a="opencli">Ver ficha del cliente</button>';
+      } else if (cliState === 'ok') {
+        line.innerHTML = '<span class="hint">Este nombre no está en tu lista de clientes.</span><button class="link" type="button" data-a="newcli">Cargarlo como cliente</button>';
+      } else line.hidden = true;
+    }
+    hint.hidden = !!c;
+  }
+  $('#cliLine').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-a]'); if (!b) return;
+    if (b.dataset.a === 'opencli') openCli(draft.clientId, 'busca');
+    else if (b.dataset.a === 'newcli') { openCli(null, 'busca', { name: draft.label.trim() }); cs.linkDraft = true; }
+  });
+  function pickClientFromLabel() {
+    var prev = draft.clientId, c = clientByName(draft.label); draft.clientId = c ? c.id : ''; syncClientLine();
+    if (prev !== draft.clientId) renderItems();
+  }
+
+  function keyOf(it) { return C.propKey(finalize(it.f)); }
+  function sentInfo(cli, it) {
+    if (!cli) return null;
+    var k = keyOf(it), h = (cli.hist || []).find(function (x) { return x.k === k; });
+    // si es la misma ficha que se está editando, no cuenta como "ya enviada"
+    if (h && draft.editId && h.cid === draft.editId) return null;
+    return h || null;
+  }
+  // ¿cómo encaja esta propiedad con lo que busca el cliente elegido?
+  function fitChip(it) {
+    var cli = clientById(draft.clientId); if (!cli || cli.estado === 'cerrado') return '';
+    var res = C.matchProperty(finalize(it.f), cli);
+    if (res.match) return '<span class="wchip fit">Coincide con lo que busca</span>';
+    var bad = res.checks.filter(function (c) { return c.st === 'no'; })[0];
+    return bad ? '<span class="wchip bad" title="' + esc(bad.txt) + '">Ojo: ' + esc(bad.txt.length > 46 ? bad.txt.slice(0, 44) + '…' : bad.txt) + '</span>' : '';
+  }
+  function dupChip(it) {
+    var h = sentInfo(clientById(draft.clientId), it); if (!h) return '';
+    var t = h.s === 'd' ? 'Ya se la mandaste el ' + fmtDay(h.at) + ' y la descartó' + (h.r ? ' (' + h.r + ')' : '') : h.s === 'i' ? 'Ya se la mandaste el ' + fmtDay(h.at) + ' y le interesa' : 'Ya se la mandaste el ' + fmtDay(h.at);
+    return '<span class="wchip dup">' + esc(t) + '</span>';
+  }
+  function itemFlags(it) { return dupChip(it) + fitChip(it); }
+  function dupCount() {
+    var cli = clientById(draft.clientId); if (!cli) return { n: 0, d: 0 };
+    var n = 0, d = 0;
+    okItems().forEach(function (it) { var h = sentInfo(cli, it); if (h) { n++; if (h.s === 'd') d++; } });
+    return { n: n, d: d };
+  }
+
+  function matchesFor(it) {
+    if (it._mv === clientsVer && it._mf === it.f) return it._mr;
+    var f = finalize(it.f), k = C.propKey(f), out = [];
+    activeClients().forEach(function (c) {
+      if ((c.hist || []).some(function (h) { return h.k === k; })) return;
+      var r = C.matchProperty(f, c);
+      if (r.match) out.push({ c: c, r: r });
+    });
+    it._mv = clientsVer; it._mf = it.f; it._mr = out;
+    return out;
+  }
+  function checksHtml(r) {
+    return r.checks.filter(function (k) { return k.st !== 'unk' || k.k === 'cochera' || k.k === 'pago'; }).map(function (k) {
+      var cls = k.st === 'ok' ? 'g' : k.st === 'warn' ? 'am' : k.st === 'no' ? 'r' : 'gr';
+      return '<span class="chp ' + cls + '">' + (k.st === 'ok' ? '✓ ' : k.st === 'warn' ? '! ' : k.st === 'unk' ? '? ' : '') + esc(k.txt) + '</span>';
+    }).join('');
+  }
+  function renderMatches() {
+    var box = $('#matchBox'); if (!box) return;
+    var html = '';
+    (draft.added || []).forEach(function (a, i) {
+      html += '<div class="mt done"><div class="tt">' + icon('check') + '<span>' + (a.added ? 'Listo: ' + (a.added === 1 ? 'la propiedad ya está' : 'las ' + a.added + ' propiedades ya están') + (a.created ? ' en una ficha nueva de ' : ' en la ficha de ') + '<b>' + esc(a.name) + '</b>.' + (a.created ? '' : (a.wait ? ' Su link es el mismo: ve la novedad en un minuto, más o menos.' : ' Su link es el mismo: ve la novedad al instante.')) : 'Esas propiedades ya estaban en la ficha de <b>' + esc(a.name) + '</b>.') + '</span></div>' +
+        '<div class="bt">' + (a.url ? (a.pending ? '<span class="hint"><span class="spin"></span> Publicándose… en un minuto más o menos ya podés avisarle.</span>' : '<button class="btn wa small" data-a="mwa" data-i="' + i + '">' + icon('chat') + ' Avisarle por WhatsApp</button><button class="btn ghost small" data-a="mview" data-i="' + i + '">' + icon('ext') + ' Ver su ficha</button>') : '') + '</div></div>';
+    });
+    var groups = {}, order = [];
+    okItems().forEach(function (it) {
+      if (!it.f.title.trim() || !it.f.publisher.trim()) return;
+      var self = draft.clientId;
+      matchesFor(it).forEach(function (m) {
+        if (m.c.id === self) return;
+        if (draft.dismiss && draft.dismiss[m.c.id + '|' + keyOf(it)]) return;
+        if (!groups[m.c.id]) { groups[m.c.id] = { c: m.c, list: [] }; order.push(m.c.id); }
+        groups[m.c.id].list.push({ it: it, r: m.r });
+      });
+    });
+    order.forEach(function (id) {
+      var g = groups[id], one = g.list.length === 1;
+      var w = wants(g.c); if (g.c.max != null) w.push('hasta ' + usd(g.c.max));
+      html += '<div class="mt" data-c="' + esc(id) + '"><div class="tt">' + icon('star') + '<span>' + (one ? 'Esta propiedad también le puede servir a ' : 'Estas ' + g.list.length + ' propiedades también le pueden servir a ') + '<b>' + esc(g.c.name) + '</b><br><span class="hint" style="font-weight:500">Busca: ' + esc(w.join(' · ') || 'sin datos') + '</span></span></div><ul>' +
+        g.list.map(function (x) { return '<li><b>' + esc(plain(x.it.f.title).slice(0, 90)) + '</b><div class="chips">' + checksHtml(x.r) + '</div></li>'; }).join('') + '</ul>' +
+        '<div class="bt"><button class="btn small" data-a="madd">' + icon('plus') + ' Agregar a la ficha de ' + esc(firstName(g.c.name) || g.c.name) + '</button><button class="link" data-a="mno" style="font-size:13.5px">No, gracias</button></div></div>';
+    });
+    box.innerHTML = html;
+  }
+  $('#matchBox').addEventListener('click', async function (e) {
+    var b = e.target.closest('[data-a]'); if (!b) return;
+    var a = b.dataset.a;
+    if (a === 'mwa' || a === 'mview') {
+      var x = draft.added[+b.dataset.i]; if (!x) return;
+      if (a === 'mview') { window.open(x.url, '_blank', 'noopener'); return; }
+      var c = clientById(x.clientId) || { phone: '' }, nm = firstName(x.name);
+      window.open(waLink(c, (nm ? 'Hola ' + nm + '! ' : 'Hola! ') + 'Te sumé ' + (x.added === 1 ? 'una propiedad nueva' : x.added + ' propiedades nuevas') + ' a tu selección:\n' + x.url), '_blank', 'noopener');
+      return;
+    }
+    var card = b.closest('.mt'), cid = card && card.dataset.c; if (!cid) return;
+    var cli = clientById(cid); if (!cli) return;
+    var items = okItems().filter(function (it) { return it.f.title.trim() && it.f.publisher.trim() && matchesFor(it).some(function (m) { return m.c.id === cid; }) && !(draft.dismiss && draft.dismiss[cid + '|' + keyOf(it)]); });
+    if (a === 'mno') { draft.dismiss = draft.dismiss || {}; items.forEach(function (it) { draft.dismiss[cid + '|' + keyOf(it)] = 1; }); renderMatches(); return; }
+    if (a === 'madd') {
+      if (!items.length) return;
+      b.disabled = true; b.innerHTML = '<span class="spin"></span> Agregando…';
+      try {
+        var r = await cliApi('/api/addto', { clientId: cid, props: items.map(function (it) { return C.pack(finalize(it.f)); }) });
+        if (r.cliente) upsertClient(r.cliente);
+        if (r.id && r.meta) upsertEntry(Object.assign({ id: r.id, url: r.url }, r.meta));
+        draft.added = draft.added || [];
+        var ad = { clientId: cid, name: cli.name, added: r.added, created: !!r.created, url: r.url || '', wait: !!r.wait, pending: !!(r.wait && r.added) };
+        draft.added.push(ad);
+        if (ad.pending) {
+          // GitHub tarda en publicar: hasta que no esté online no se le avisa al cliente
+          C.waitLive(r.url, r.rev, { timeoutMs: 240000 }).then(function (st) {
+            ad.pending = false;
+            var e2 = findEntry(r.id); if (e2 && st === 'live') { e2.status = 'live'; saveFichas(); }
+            renderMatches();
+          });
+        }
+        renderItems();
+        toast(r.added ? 'Agregada a la ficha de ' + cli.name : 'Ya se la habías mandado a ' + cli.name);
+      } catch (err) { toast(err.message); renderMatches(); }
+    }
+  });
+
+    // ============================================================ CLIENTES en la versión GitHub
+  // Acá no hay servidor: los clientes y su historial se guardan en ESTE navegador (bd_clients),
+  // igual que la lista de fichas. Por eso se puede hacer una copia de seguridad en Ajustes.
+  // Este archivo reemplaza a "/api/…" del panel con Netlify: mismas respuestas, pero locales.
+  var CLI_KEY = 'bd_clients';
+  var cliStore = jget(CLI_KEY, []);
+  if (!Array.isArray(cliStore)) cliStore = [];
+  cliStore = cliStore.filter(function (c) { return c && c.id && c.name; });
+  cliStore.forEach(function (c) { if (!Array.isArray(c.hist)) c.hist = []; });
+  var CLI_LIMIT = 400, HIST_MAX = 600;
+
+  function cloneJ(x) { return JSON.parse(JSON.stringify(x)); }
+  function saveClients() {
+    try { localStorage.setItem(CLI_KEY, JSON.stringify(cliStore)); }
+    catch (e) { throw new Error('No pude guardar en este navegador (la memoria está llena). Descargá una copia en Ajustes y eliminá los clientes que ya no uses.'); }
+  }
+  function storeClient(id) { for (var i = 0; i < cliStore.length; i++) if (cliStore[i].id === id) return cliStore[i]; return null; }
+  function loadList() { renderList(); }
+
+  // Une las fichas anteriores que tienen el mismo nombre que el cliente (hay que leerlas de GitHub, por eso es aparte)
+  async function linkOldFichas(cli) {
+    var me = C.norm(cli.name).trim(); if (!me) return 0;
+    var n = 0, todo = fichas.filter(function (f) { return !f.cid && C.norm(f.label).trim() === me; });
+    for (var i = 0; i < todo.length; i++) {
+      try {
+        var car = await loadCarpeta(todo[i]);
+        C.addToHist(cli, C.carpetaItems(car), todo[i].id, todo[i].created || todo[i].updated);
+        todo[i].cid = cli.id; n++;
+      } catch (e) { /* no se pudo leer esa ficha: queda sin vincular */ }
+    }
+    if (n) cli.hist.sort(function (a, b) { return String(b.at).localeCompare(String(a.at)); });
+    return n;
+  }
+  function linkOldLater(cli) {
+    if (!fichas.some(function (f) { return !f.cid && C.norm(f.label).trim() === C.norm(cli.name).trim(); })) return;
+    linkOldFichas(cli).then(function (n) {
+      if (!n) return;
+      try { saveClients(); } catch (e) { toast(e.message); return; }
+      saveFichas(); upsertClient(cloneJ(cli)); renderClients(); renderList();
+      toast('Sumé ' + n + (n === 1 ? ' ficha anterior' : ' fichas anteriores') + ' al historial de ' + cli.name);
+    }, function () { /* nada */ });
+  }
+
+  // Al publicar (o crear un link temporal) para un cliente: las propiedades quedan anotadas en su historial
+  function recordSent(entry, items, replacedId) {
+    var cli = storeClient(draft.clientId);
+    if (!cli) return;
+    try {
+      entry.cid = cli.id;
+      if (replacedId) cli.hist.forEach(function (h) { if (h.cid === replacedId) h.cid = entry.id; });
+      C.addToHist(cli, items, entry.id, entry.updated);
+      saveClients(); upsertClient(cloneJ(cli));
+    } catch (e) { toast(e.message); }
+  }
+
+  // Agrega propiedades a la última ficha publicada del cliente (o le crea una) y la vuelve a publicar en GitHub
+  async function cliAddTo(b) {
+    var cli = storeClient(b.clientId); if (!cli) throw new Error('Ese cliente ya no existe.');
+    var incoming = (b.props || []).map(function (p) { return C.unpack(p); });
+    var sent = {}, seen = {}; cli.hist.forEach(function (h) { sent[h.k] = 1; });
+    var fresh = incoming.filter(function (f) { var k = C.propKey(f); if (sent[k] || seen[k]) return false; seen[k] = 1; return true; });
+    var mine = fichas.filter(function (x) { return x.cid === cli.id && x.status !== 'tmp'; }).sort(function (a, b2) { return String(b2.updated).localeCompare(String(a.updated)); })[0];
+    if (!fresh.length) return Object.assign({ ok: true, added: 0, skipped: incoming.length, cliente: cloneJ(cli) }, mine ? { id: mine.id, url: mine.url, meta: cloneJ(mine) } : {});
+    if (!connected()) throw new Error('Para sumarla a su ficha hay que conectar GitHub en Ajustes.');
+    var g = gh(), now = new Date().toISOString(), car = null, props = fresh, id;
+    await g.info(); await ensureAssets(g, false);
+    if (mine) { id = mine.id; car = await loadCarpeta(mine); props = C.carpetaItems(car).concat(fresh); } else id = await freshId(g);
+    if (props.length > 40) throw new Error('La ficha de este cliente ya tiene 40 propiedades. Armale una ficha nueva.');
+    var c = C.buildCarpeta(id, props, { heading: (car && car.h) || '', greeting: (car && car.g) || '', wa: (car && car.wa) || waNumber() });
+    var base = pagesBase(), url = base + 'c/' + id + '/';
+    await g.put('c/' + id + '/index.html', C.buildPage(c, { pageUrl: url, assetsUrl: base + 'assets/', rel: '../../assets/' }), (mine ? 'Ficha actualizada: ' : 'Ficha nueva: ') + id);
+    var all = C.carpetaItems(c), og = C.ogInfo(c, base + 'assets/');
+    var entry = {
+      id: id, label: mine ? mine.label : cli.name, created: mine ? mine.created : now, updated: now, url: url, rev: c.u, status: 'pend', n: all.length, cid: cli.id,
+      covers: all.map(function (f) { return f.photos[0]; }).filter(Boolean).slice(0, 3), titles: all.map(function (f) { return plain(f.title); }).slice(0, 3),
+      og: { title: og.title, description: og.description, image: og.image }
+    };
+    C.addToHist(cli, fresh, id, now);
+    upsertEntry(entry);
+    saveClients();
+    return { ok: true, added: fresh.length, skipped: incoming.length - fresh.length, created: !mine, id: id, url: url, rev: c.u, meta: cloneJ(entry), cliente: cloneJ(cli), wait: true };
+  }
+
+  async function cliApi(path, b) {
+    b = b || {};
+    if (path === '/api/clients') return { clients: cloneJ(cliStore) };
+    if (path === '/api/client') {
+      var clean = C.cleanCliente(b.cliente || {});
+      if (!clean.name) throw new Error('Falta el nombre del cliente.');
+      var now = new Date().toISOString(), cli;
+      if (b.id) {
+        var prev = storeClient(b.id);
+        if (!prev) throw new Error('Ese cliente ya no existe.');
+        cli = Object.assign(prev, clean, { updated: now });
+        saveClients();
+        return { ok: true, cliente: cloneJ(cli), linked: 0 };
+      }
+      if (cliStore.length >= CLI_LIMIT) throw new Error('Llegaste al máximo de ' + CLI_LIMIT + ' clientes. Eliminá los que ya compraron.');
+      var id = C.makeId(8);
+      cli = Object.assign({}, clean, { id: id, created: now, updated: now, hist: [] });
+      cliStore.push(cli);
+      try { saveClients(); } catch (e) { cliStore.pop(); throw e; }
+      linkOldLater(cli);
+      return { ok: true, cliente: cloneJ(cli), linked: 0 };
+    }
+    if (path === '/api/client/delete') {
+      cliStore = cliStore.filter(function (c) { return c.id !== b.id; });
+      saveClients();
+      var touched = false; fichas.forEach(function (f) { if (f.cid === b.id) { delete f.cid; touched = true; } });
+      if (touched) saveFichas();
+      return { ok: true };
+    }
+    if (path === '/api/hist') {
+      var c1 = storeClient(b.id); if (!c1) throw new Error('Ese cliente no existe.');
+      var h = c1.hist.filter(function (x) { return x.k === b.key; })[0]; if (!h) throw new Error('Esa propiedad ya no está en el historial.');
+      h.s = b.s === 'd' || b.s === 'i' ? b.s : 'p'; h.r = h.s === 'd' ? String(b.r || '').slice(0, 60) : ''; h.sat = new Date().toISOString(); c1.updated = h.sat;
+      saveClients();
+      return { ok: true };
+    }
+    if (path === '/api/hist/remove') {
+      var c2 = storeClient(b.id); if (!c2) throw new Error('Ese cliente no existe.');
+      c2.hist = c2.hist.filter(function (x) { return x.k !== b.key; }); c2.updated = new Date().toISOString();
+      saveClients();
+      return { ok: true };
+    }
+    if (path === '/api/addto') return cliAddTo(b);
+    throw new Error('Función no disponible');
+  }
+
+  // Copia de seguridad: traer clientes de un archivo
+  function importClients(list) {
+    if (!Array.isArray(list)) return 0;
+    var n = 0, today = new Date().toISOString();
+    list.forEach(function (c) {
+      if (!c || !c.id || !c.name) return;
+      var fixed = Object.assign(C.cleanCliente(c), { id: String(c.id), created: c.created || today, updated: c.updated || '', hist: Array.isArray(c.hist) ? c.hist.slice(0, HIST_MAX) : [] });
+      var cur = storeClient(fixed.id);
+      if (!cur) { if (cliStore.length < CLI_LIMIT) { cliStore.push(fixed); n++; } }
+      else if (String(fixed.updated) > String(cur.updated)) { cliStore[cliStore.indexOf(cur)] = fixed; n++; }
+    });
+    if (n) { try { saveClients(); } catch (e) { toast(e.message); } }
+    return n;
+  }
+
+  // Aviso en la pestaña Clientes: dónde viven los datos y cuándo fue la última copia
+  function renderBackupLine() {
+    var el = $('#cliBackup'); if (!el) return;
+    if (!cliStore.length) { el.hidden = true; return; }
+    el.hidden = false;
+    var last = lsGet('bd_lastbackup'), days = last ? Math.max(0, Math.floor((Date.now() - new Date(last).getTime()) / 864e5)) : null;
+    var ok = days != null && days < 15;
+    el.className = 'gh ' + (ok ? 'ok' : 'no');
+    el.innerHTML = icon(ok ? 'check' : 'cloud') + '<span>' + esc('Tus clientes se guardan en este navegador. ' + (last ? 'Última copia de seguridad: ' + (days === 0 ? 'hoy' : 'hace ' + days + (days === 1 ? ' día' : ' días')) + '.' : 'Todavía no descargaste ninguna copia de seguridad.')) + '</span><button type="button" id="btnBackupNow">Descargar copia</button>';
+  }
+  $('#cliBackup').addEventListener('click', function (e) { if (e.target.closest && e.target.closest('#btnBackupNow')) $('#btnExport').click(); });
+  // la pestaña Clientes siempre muestra el aviso de la copia de seguridad
+  (function () { var rc = renderClients; renderClients = function () { rc(); renderBackupLine(); }; })();
+
+
   // ------------------------------------------------------------ arranque
-  loadDraft(); syncFields(); renderItems(); updateConn(); updateCounts(); fillDatalists(); importFromHash();
+  loadDraft(); loadClients(); syncFields(); renderItems(); updateConn(); updateCounts(); fillDatalists(); importFromHash();
   if (draft.editId) setStatus('Estás editando una ficha ya publicada. Guardá los cambios cuando termines.');
   setTimeout(function () { checkPending(); }, 1500);
   if (!location.hash) setTimeout(function () { try { $('#linkIn').focus(); } catch (e) { /* nada */ } }, 100);
